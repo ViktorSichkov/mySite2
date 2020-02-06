@@ -26,30 +26,36 @@ header {
     height: 100vh;
     background-image: url(../img/bg1.jpg);
     background-size: cover;
-    }
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-around;
+}
 
 .headerTop img {
     width: 176px;
-    float: left;
-    margin-left: 122px;
-}
-nav {
-float: right;
-margin-right: 100px;
+    height: auto;
 }
 
-nav ul li {
-    display: inline-block;
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
 }
 
 nav a {
+    display: flex;
     color: #fff;
     display: block;
     font-size: 21px;
     line-height: 1.5;
     text-transform: capitalize;
     text-align: center;
-    padding: 51px 40px 0 0;
+    padding: 47px 25px 0 0;
 }
 
 nav a.pad {
@@ -58,6 +64,7 @@ nav a.pad {
 
 nav a.fa {
     color: #dab33e;
+    padding-top: 55px;
 }
 
 nav a.fa:hover {
@@ -68,13 +75,34 @@ nav a.fa:focus {
     outline: none;
 }
 
+.menuBtn {
+    display: flex;
+    position: fixed;
+    top: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    border: 2px solid green;
+}
+
+
+
 header h1 {
     font-size: 90px;
     line-height: 1.3;
     font-family: 'Yeseva One', cursive;
     color: #fff;
     text-align: center;
-    margin-top: 26vh;
+    margin-top: 10vh;
 }
 
 .divider {
@@ -89,7 +117,7 @@ header h1 {
 .btnContainer {
     margin: 5vh 0 0 31.5vw;
 
-    
+
 }
 
 header button {
@@ -118,9 +146,9 @@ header button {
     transition: .3s linear;
 }
 
-.fbtn:hover{
-     color: greenyellow;
-     border: 1px solid greenyellow;
+.fbtn:hover {
+    color: greenyellow;
+    border: 1px solid greenyellow;
 }
 
 .sbtn:hover {
