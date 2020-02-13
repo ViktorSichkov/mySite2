@@ -18,9 +18,6 @@ a {
 }
 
 header {
-    /* position: fixed;
-    top: 0;
-    left: 0; */
     max-width: 1600px;
     width: 100%;
     height: 100vh;
@@ -229,13 +226,7 @@ header button {
 
 
 
-................. MEDIA ..................................
 
-@media screen and (max-width: 960) {
-    nav {
-        display: none;
-    }
-}
 
 
 

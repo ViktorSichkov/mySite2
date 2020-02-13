@@ -1,0 +1,28 @@
+@mixin flexible {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin border($color) {
+    border: 1px solid $color;
+}
+
+@mixin font($f-size, $lineH) {
+    font-size: $f-size;
+    line-height: $lineH;
+    text-align: center;
+}
+
+@mixin pad ($pads...) {
+    padding: $pads;
+}
+
+@mixin background_1 {
+    background-image: url ("../img/bg1.jpg");
+    background-size: cover;
+}
+
+@mixin background_2 {
+    background-image: url("../img/thirdBlock_img/bg3.jpg");
+    background-size: cover;
+}
