@@ -221,7 +221,43 @@ button {
 
 .square {
     position: relative;
-    width: 465px;
-    height: 465px;
-    background: rgba(43, 34, 26, .9);
+    top: -5%;
+    width: 500px;
+    height: 500px;
+    background: rgba(0, 0, 0, .6);
+    padding-top: 3.7%;
+    box-sizing: border-box;
+}
+
+.square h1, .square p   {
+color: #fff;
+text-align: center;
+}
+
+.square h1 {
+font-family: 'Yeseva One';
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.square p {
+padding: 0 11%;
+}
+
+.square img {
+    padding-left: 25%;
+    margin-bottom: 4%;
+}
+
+.square div {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 12%;
+    margin-top: 20%;
+}
+
+.square div img {
+    margin-right: 6%;
+    margin-left: -23%;
 }
