@@ -234,6 +234,22 @@ button {
   padding: 6% 15% 0 0;
 }
 
+.thirdBlock .square div {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 12%;
+  margin-top: 20%;
+}
+
+.thirdBlock .square div img {
+  margin-right: 6%;
+  margin-left: -23%;
+}
+
 .square {
   position: relative;
   top: -5%;
@@ -245,7 +261,8 @@ button {
           box-sizing: border-box;
 }
 
-.square h1, .square p {
+.square h1,
+.square p {
   color: #fff;
   text-align: center;
 }
@@ -265,19 +282,106 @@ button {
   margin-bottom: 4%;
 }
 
-.square div {
-  margin-top: 10%;
+.fourthBlock {
+  height: 100vh;
+  background: #fff;
+}
+
+.fourthBlock .boxWrapper1,
+.fourthBlock .boxWrapper2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 12%;
-  margin-top: 20%;
+  width: 100%;
+  text-align: center;
+  margin-top: 4%;
 }
 
-.square div img {
-  margin-right: 6%;
-  margin-left: -23%;
+.fourthBlock .boxWrapper1 div,
+.fourthBlock .boxWrapper2 div {
+  width: 40%;
+}
+
+.fourthBlock .boxWrapper1 div h1,
+.fourthBlock .boxWrapper2 div h1 {
+  color: #cc9900;
+  font-size: 30px;
+}
+
+.fourthBlock .boxWrapper1 div img,
+.fourthBlock .boxWrapper2 div img {
+  padding: 10px 0;
+  width: auto;
+  height: auto;
+}
+
+.fourthBlock .boxWrapper1 div p,
+.fourthBlock .boxWrapper2 div p {
+  padding-bottom: 5px;
+  color: #4c4c4c;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: 'Lato Regular';
+}
+
+.fourthBlock .boxWrapper1 div p:nth-last-child(2n),
+.fourthBlock .boxWrapper2 div p:nth-last-child(2n) {
+  color: #c89f2d;
+  font-size: 21px;
+  line-height: 1.2;
+  font-family: 'Yeseva One';
+}
+
+.fifthBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-image: url("../img/fifthBlock_img/food.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fifthBlock .square {
+  background: rgba(0, 0, 0, 0.6);
+  width: 45%;
+  height: 500px;
+  margin: 7.5% auto;
+}
+
+.fifthBlock .square h1,
+.fifthBlock .square p {
+  color: #fff;
+  text-align: center;
+}
+
+.fifthBlock .square h1 {
+  font-family: 'Yeseva One';
+  font-size: 36px;
+}
+
+.fifthBlock .square p {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.5;
+  font-family: 'Lato Regular';
+}
+
+.fifthBlock .square img {
+  padding-left: 30%;
+  margin-bottom: 4%;
+}
+
+.sixthBlock {
+  display: block;
+  height: 100vh;
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
