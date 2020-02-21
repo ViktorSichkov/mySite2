@@ -269,13 +269,16 @@ button {
 .fourthBlock {
     height: 100vh;
     background: $baseColor;
+    padding-left: 7.5%;
+    margin-top: 4%;
 
     .boxWrapper1,
     .boxWrapper2 {
         @include flexible;
         width: 100%;
+        max-width: 1150px;
         text-align: center;
-        margin-top: 4%;
+        // margin-top: 4%;
 
         div {
             width: 40%;
@@ -283,6 +286,7 @@ button {
             h1 {
                 color: #cc9900;
                 font-size: 30px;
+                font-family: 'Yeseva One';
             }
 
             img {
@@ -295,38 +299,86 @@ button {
                 padding-bottom: 5px;
                 color: #4c4c4c;
                 font-size: 16px;
-                line-height: 1.2;
+                line-height: 1.8;
                 font-family: 'Lato Regular';
+                text-align: left;
 
                 &:nth-last-child(2n) {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
                     color: #c89f2d;
                     font-size: 21px;
                     line-height: 1.2;
                     font-family: 'Yeseva One';
+                    border-bottom: 1px solid #c89f2d;
+                    margin-top: 10px;
                 }
             }
         }
     }
 }
 
+.sticker {
+    position: relative;
 
+    .special {
+        position: absolute;
+        right: 0;
+        margin-top: 15px;
+        color: $baseColor;
+        background: rgba(200, 159, 45, 0.8);
+        padding: 0px 14px;
+    }
+
+    .boxSpecial2 {
+        border: 1px solid goldenrod;
+        border-bottom: 0;
+    }
+
+    .boxSpecial2,
+    .boxSpecial3 {
+        padding: 5px 15px;
+    }
+
+    .boxSpecial3 {
+        border: 1px solid goldenrod;
+        border-top: 0;
+    }
+}
+
+// .boxWrapper1 div:nth-of-type(2) {
+//     border: 1px solid blue;
+//     padding-bottom: 0;
+//     margin-bottom: 0;
+// }
+
+// .boxWrapper1 div:nth-of-type(2) p:nth-of-type(4n) {
+//     margin-bottom: 0;
+//     padding-bottom: 0;
+// }
+
+.boxWrapper2 div:nth-of-type(2) {
+    margin-top: -5%;
+
+}
 
 
 //   ........................... FIFTH BLOCK ..........................
 
 .fifthBlock {
-    display: flex;
-    justify-content: center;
+    position: relative;
     height: 100vh;
     background-image: url("../img/fifthBlock_img/food.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
 
     .square {
+        position: absolute;
         background: rgba(0, 0, 0, 0.6);
         width: 45%;
-        height: 500px;
-        margin: 7.5% auto;
+        height: 450px;
+        margin: 7.5% 30%;
+        padding-top: 5.5%;
 
         h1,
         p {
@@ -362,3 +414,32 @@ button {
     height: 100vh;
     background-color: $baseColor;
 }
+
+// ........................... FOOTER ..............................
+
+.footer {
+    display: block;
+    height: 25vh;
+    background: black;
+}
+
+// .footer div:nth-of-type(1) {
+//     background: green;
+
+
+// }
+
+// .footer div {
+//     display: inline-block;
+
+//     width: 30%;
+//     height: 25vh;
+//     margin: 2% 0;
+//     background-color: gray;
+//     border: 2px solid blue;
+
+// }
+
+// .footer div h1:nth-last-of-type(-n+1) {
+//     padding-top: 5%;
+// }

@@ -285,6 +285,8 @@ button {
 .fourthBlock {
   height: 100vh;
   background: #fff;
+  padding-left: 7.5%;
+  margin-top: 4%;
 }
 
 .fourthBlock .boxWrapper1,
@@ -295,8 +297,8 @@ button {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+  max-width: 1150px;
   text-align: center;
-  margin-top: 4%;
 }
 
 .fourthBlock .boxWrapper1 div,
@@ -308,6 +310,7 @@ button {
 .fourthBlock .boxWrapper2 div h1 {
   color: #cc9900;
   font-size: 30px;
+  font-family: 'Yeseva One';
 }
 
 .fourthBlock .boxWrapper1 div img,
@@ -322,36 +325,74 @@ button {
   padding-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.8;
   font-family: 'Lato Regular';
+  text-align: left;
 }
 
 .fourthBlock .boxWrapper1 div p:nth-last-child(2n),
 .fourthBlock .boxWrapper2 div p:nth-last-child(2n) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
   color: #c89f2d;
   font-size: 21px;
   line-height: 1.2;
   font-family: 'Yeseva One';
+  border-bottom: 1px solid #c89f2d;
+  margin-top: 10px;
+}
+
+.sticker {
+  position: relative;
+}
+
+.sticker .special {
+  position: absolute;
+  right: 0;
+  margin-top: 15px;
+  color: #fff;
+  background: rgba(200, 159, 45, 0.8);
+  padding: 0px 14px;
+}
+
+.sticker .boxSpecial2 {
+  border: 1px solid goldenrod;
+  border-bottom: 0;
+}
+
+.sticker .boxSpecial2,
+.sticker .boxSpecial3 {
+  padding: 5px 15px;
+}
+
+.sticker .boxSpecial3 {
+  border: 1px solid goldenrod;
+  border-top: 0;
+}
+
+.boxWrapper2 div:nth-of-type(2) {
+  margin-top: -5%;
 }
 
 .fifthBlock {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
   height: 100vh;
   background-image: url("../img/fifthBlock_img/food.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
 .fifthBlock .square {
+  position: absolute;
   background: rgba(0, 0, 0, 0.6);
   width: 45%;
-  height: 500px;
-  margin: 7.5% auto;
+  height: 450px;
+  margin: 7.5% 30%;
+  padding-top: 5.5%;
 }
 
 .fifthBlock .square h1,
@@ -383,5 +424,11 @@ button {
   display: block;
   height: 100vh;
   background-color: #fff;
+}
+
+.footer {
+  display: block;
+  height: 25vh;
+  background: black;
 }
 /*# sourceMappingURL=style.css.map */
