@@ -267,7 +267,6 @@ button {
 // ............................FOURTH BLOCK..............................
 
 .fourthBlock {
-    height: 100vh;
     background: $baseColor;
     padding-left: 7.5%;
     margin-top: 4%;
@@ -278,7 +277,7 @@ button {
         width: 100%;
         max-width: 1150px;
         text-align: center;
-        // margin-top: 4%;
+        margin-bottom: 30px;
 
         div {
             width: 40%;
@@ -332,7 +331,7 @@ button {
     }
 
     .boxSpecial2 {
-        border: 1px solid goldenrod;
+        @include border(goldenrod);
         border-bottom: 0;
     }
 
@@ -342,25 +341,17 @@ button {
     }
 
     .boxSpecial3 {
-        border: 1px solid goldenrod;
+        @include border(goldenrod);
         border-top: 0;
     }
 }
 
-// .boxWrapper1 div:nth-of-type(2) {
-//     border: 1px solid blue;
-//     padding-bottom: 0;
-//     margin-bottom: 0;
-// }
-
-// .boxWrapper1 div:nth-of-type(2) p:nth-of-type(4n) {
-//     margin-bottom: 0;
-//     padding-bottom: 0;
-// }
+.boxWrapper1 div:nth-of-type(1) {
+    margin-bottom: 15px;
+}
 
 .boxWrapper2 div:nth-of-type(2) {
-    margin-top: -5%;
-
+    margin-top: -70px;
 }
 
 
@@ -401,6 +392,8 @@ button {
         }
 
         img {
+            display: flex;
+            justify-content: center;
             padding-left: 30%;
             margin-bottom: 4%;
         }
@@ -410,9 +403,33 @@ button {
 // .........................................SIXTH BLOCK...........................
 
 .sixthBlock {
-    display: block;
+    display: flex;
+   justify-content: center;
     height: 100vh;
     background-color: $baseColor;
+    padding: 102px 290px 0 215px;
+}
+
+.imgContainer {
+    display: flex;
+}
+
+.sixthBlock .imgContainer img:first-child {
+    margin-right: 30px;
+}
+
+.sixthBlock .imgContainer img:last-child {
+    margin-right: 100px;
+}
+
+.textBox {
+    display: flex;
+    width: 480px;
+    border: 1px solid green;
+}
+
+.textBox h1, .textBox img, .textBox p {
+    
 }
 
 // ........................... FOOTER ..............................
