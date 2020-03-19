@@ -1,14 +1,131 @@
-@media screen and (max-width: 960) {
-    nav.myNav {
-        display: none;
+/* 1200px
+992px
+768px
+480px
+320px */
 
+@media (max-width: 1200px) {
+    .headerTop img {
+        max-width: 136px;
+        margin-top: 18px;
     }
 
-    #navMenu a {
-        display: none;
-        justify-content: flex-end;
-        flex-direction: column;
-        color:blue;
+
+    .headerBottom h1 {
+        color: green;
     }
-   
+}
+
+@media (max-width: 992px) {
+
+    .headerTop {
+        justify-content: space-between;
+    }
+
+    .headerTop img {
+        max-width: 110px;
+        margin: 27px 0 0 10px;
+    }
+
+    .menu a {
+        padding: 47px 10px 0 0;
+    }
+
+    .headerBottom h1 {
+        color: blue;
+    }
+}
+
+@media (max-width: 850px) {
+    .headerTop {
+        position: relative;
+    }
+
+    /* .btn {
+        position: fixed;s
+        top: 20px;
+        right: 50px;
+        width: 40px;
+        height: 40px;
+        border-radius: 10%;
+        background-color: #fff;
+        z-index: 5;
+        cursor: pointer;
+    } */
+
+    /* .btn::before,
+    .btn::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        color: #000;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: 7;
+    } */
+
+    /* .btn span {
+        position: absolute;
+        top: 5px;
+        width: 15px;
+        height: 2px;
+        color: #000;
+        z-index: 7;
+    } */
+
+    .headerTop img {
+        position: fixed;
+        left: 0;
+    }
+
+    .headerTop::after {
+        margin: 0;
+        padding: 0;
+        content: "";
+        display: none;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        z-index: 3;
+    }
+
+    .menu {
+        display: block;
+        position: fixed;
+        top: 60px;
+        left: 40%;
+        z-index: 5;
+    }
+
+    .menu a {
+        padding: 10px 0 0 0;
+        font-size: 30px;
+    }
+
+    .menu a:hover {
+        text-decoration: none;
+    }
+
+    .menu a.pad {
+        padding: 20px 10px 0 13px;
+    }
+
+    a.fa {
+        transform: translateX(6px);
+    }
+
+    .headerBottom h1 {
+        color: yellow;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .headerBottom h1 {
+        color: red;
+    }
 }

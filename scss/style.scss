@@ -17,7 +17,6 @@ a {
 
 .container {
     max-width: 1600px;
-
 }
 
 header {
@@ -32,6 +31,7 @@ header {
     @include flexible;
 
     img {
+        max-width: 100%;
         width: 176px;
         height: auto;
     }
@@ -172,6 +172,7 @@ button {
             padding-left: 23%;
             width: 80%;
             word-wrap: break-word;
+            color: #000;
             @include font(16px, 1.5);
         }
 
@@ -404,8 +405,6 @@ button {
 
 .sixthBlock {
     display: flex;
-   justify-content: center;
-    height: 100vh;
     background-color: $baseColor;
     padding: 102px 290px 0 215px;
 }
@@ -418,45 +417,289 @@ button {
     margin-right: 30px;
 }
 
-.sixthBlock .imgContainer img:last-child {
-    margin-right: 100px;
-}
-
 .textBox {
-    display: flex;
+    margin-left: 12%;
     width: 480px;
-    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-.textBox h1, .textBox img, .textBox p {
-    
+.textBox h1 {
+    margin-bottom: 21px;
 }
 
-// ........................... FOOTER ..............................
+.textBox img {
+    margin-bottom: 32px;
+}
 
-.footer {
+.textBox p {
+    color: black;
+}
+
+.textBox form {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: left;
+}
+
+.textBox form p {
+    color: gold;
+}
+
+.textBox form label input,
+.textBox form label select {
+    padding: 5px 0 5px 10px;
+    margin-top: 5px;
+}
+
+.textBox form label span {
+    line-height: 1.2;
+}
+
+.textBox label input:focus {
+    border: 1px solid #c9a131;
+    outline: none;
+}
+
+.textBox form label select:focus {
+    border: 1px solid #c9a131;
+    outline: none;
+}
+
+.textBox form p:first-child {
+    margin-bottom: 10px;
+}
+
+.textBox form input:nth-child(1) {
+    margin-right: 30px;
+}
+
+.textBox form label:last-child {
+    margin-top: 2px;
+    margin-left: 30px;
+}
+
+.textBox form input:nth-child(3) {
+    margin-top: 34px;
+    background: #c9a131;
+    height: 39px;
+    width: 199px;
+    border: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    padding-left: 73px;
+}
+
+#calendar {
     display: block;
-    height: 25vh;
-    background: black;
+    background-image: url(../img/sixthBlock-img/calendar.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 95%;
+    cursor: pointer;
 }
 
-// .footer div:nth-of-type(1) {
-//     background: green;
+.textBox form label input:last-child {
+    overflow: hidden;
+}
+
+.textBox form p {
+    display: flex;
+}
+
+.textBox form label span {
+    margin-left: 60%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 150px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: -5% auto 0;
+    border: 1px solid #888;
+    width: 60%;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    transform: translateY(-10px);
+}
+
+.close:hover,
+.close:focus {
+    color: #824e01;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 30px 16px;
+    background-color: #b58200;
+    color: white;
+    font-size: 25px;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 20px 16px;
+    font-size: 20px;
+}
+
+#myModal .modal-body p {
+    color: black;
+}
 
 
-// }
+/* Modal Footer */
+.modal-footer {
+    padding: 30px 16px;
+    background-color: #b58200;
+    color: white;
+    font-size: 25px;
+}
 
-// .footer div {
-//     display: inline-block;
 
-//     width: 30%;
-//     height: 25vh;
-//     margin: 2% 0;
-//     background-color: gray;
-//     border: 2px solid blue;
+/* Add Animation */
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
 
-// }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
 
-// .footer div h1:nth-last-of-type(-n+1) {
-//     padding-top: 5%;
-// }
+
+/* ........................... FOOTER ........................*/
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    min-height: 300px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.93);
+
+}
+
+.bottom div h1,
+p {
+    color: white;
+}
+
+.bottom div h1 {
+    font-family: 'Yeseva One';
+    font-size: 21px;
+}
+
+.bottom div p {
+    font-family: 'Lato';
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer div {
+    text-align: center;
+    margin-top: 3%;
+    width: 24%;
+    border: 1px solid green;
+
+    display: flex;
+    flex-direction: column;
+}
+
+footer div:first-child {
+    // flex-basis: 250px;
+    width: 100%;
+    max-width: 300px;
+}
+
+footer div h1,
+footer div img {
+    margin-bottom: 20px;
+}
+
+footer .fDivider {
+    margin-left: -50px;
+    width: 200px;
+}
+
+footer div div {
+    margin-top: 25px;
+}
+
+footer div:nth-child(n+2) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div:nth-child(n+2) div {
+    display: flex;
+    // min-width: 200px;
+    width: 100%;
+    flex-flow: row nowrap;
+    align-self: center;
+    justify-content: center;
+
+    // position: absolute;
+
+    // bottom: 48px;
+    // width: 150px;
+    height: 50px;
+}
+
+footer div:nth-child(n+2) div img {
+    display: flex;
+    margin-top: 25px;
+    width: 38px;
+    height: 18px;
+    padding-right: 10px;
+}
+
+footer div i {
+    color: white;
+    margin-top: 25px;
+    padding-right: 10px;
+}
