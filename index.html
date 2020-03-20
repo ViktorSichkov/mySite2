@@ -50,7 +50,6 @@
                             </a>
                             <a href="https://uk-ua.facebook.com/" class="pad fa fa-facebook" target="_blank">
                             </a>
-
                         </ul>
                     </nav>
                 </div>
@@ -59,8 +58,8 @@
                     <img src="img/divider.png" class="divider" alt="img">
 
                     <div class="btnContainer">
-                        <button class="fbtn">book a table</button>
-                        <button class="sbtn">see the menu</button>
+                        <a href="#bookTable"><button class="fbtn">Book a table</button></a>
+                        <a href="#menu"><button class="sbtn">See the menu</button></a>
                     </div>
                 </div>
             </header>
@@ -97,7 +96,7 @@
         </section>
 
         <section class="fourthBlock">
-            <div class="boxWrapper1">
+            <div class="boxWrapper1" id="menu">
                 <div>
                     <h1>Appetisers</h1>
                     <img src="img/Secondblock_img/divider_gold.png" alt="divider">
@@ -171,7 +170,7 @@
                 </p>
 
                 <div>
-                    <form action="#" method="post">
+                    <form id="bookTable" action="#" method="post">
                         <p>
                             <label for="name1">Name <input required type="text" name="name" placeholder="your name *"
                                     id="name1"></label>
@@ -180,7 +179,7 @@
                         </p>
                         <p>
                             <label>Date<span></span><input id="calendar" required type="datetime" maxlength="15"
-                                    name="name" placeholder="date *" id="name1"></label>
+                                    name="menu" placeholder="date *" id="name1" id="menu"></label>
                             <label>Party number <br><select required name="name[]">
                                     <option value="first">Party number 1</option>
                                     <option value="second">Party number 2</option>
@@ -190,7 +189,7 @@
                         </p>
 
 
-                        <input type="submit" name="submit" value="Book Now" id="myBtn">
+                        <input type="submit" name="#bookTable" value="Book Now" id="myBtn">
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
 

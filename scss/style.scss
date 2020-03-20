@@ -137,6 +137,7 @@ button {
             color: greenyellow;
             @include border(greenyellow);
         }
+
     }
 
     .sbtn {
@@ -151,6 +152,11 @@ button {
         }
     }
 }
+
+
+
+
+
 
 /* ...............SECOND BLOCK.......................................... */
 .secondBlock {
@@ -553,6 +559,18 @@ button {
     animation-duration: 0.4s;
 }
 
+#myBtn {
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background-color: #805f05;
+    border-right: 5px solid #2e2305;
+    border-left: 5px solid #2e2305;
+    border-radius: 20px;
+}
+
 /* The Close Button */
 .close {
     color: white;
@@ -643,14 +661,12 @@ footer div {
     text-align: center;
     margin-top: 3%;
     width: 24%;
-    border: 1px solid green;
-
     display: flex;
     flex-direction: column;
+
 }
 
 footer div:first-child {
-    // flex-basis: 250px;
     width: 100%;
     max-width: 300px;
 }
@@ -677,16 +693,10 @@ footer div:nth-child(n+2) {
 
 footer div:nth-child(n+2) div {
     display: flex;
-    // min-width: 200px;
     width: 100%;
     flex-flow: row nowrap;
     align-self: center;
     justify-content: center;
-
-    // position: absolute;
-
-    // bottom: 48px;
-    // width: 150px;
     height: 50px;
 }
 
@@ -698,7 +708,7 @@ footer div:nth-child(n+2) div img {
     padding-right: 10px;
 }
 
-footer div i {
+footer div .fa {
     color: white;
     margin-top: 25px;
     padding-right: 10px;
