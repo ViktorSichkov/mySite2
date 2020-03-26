@@ -5,9 +5,8 @@
 320px */
 
 @media (max-width: 1200px) {
-    .headerTop img {
-        max-width: 136px;
-        margin-top: 18px;
+    .wrapper {
+        padding-top: 0;
     }
 
 
@@ -27,6 +26,39 @@
         margin: 27px 0 0 10px;
     }
 
+    #burger {
+        display: block;
+    }
+
+    .menu {
+        /* display: none; */
+        position: fixed;
+        top: 60px;
+        left: 40%;
+        z-index: 12;
+    }
+
+
+
+    .btn:hover nav {
+        display: block;
+    }
+
+    .btn:hover .menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .btn:hover .menu a {
+        display: block;
+    }
+
+
+    /* #burger:checked~.menu {
+        display: block;
+
+    } */
+
     .menu a {
         padding: 47px 10px 0 0;
     }
@@ -42,22 +74,23 @@
     }
 
     .headerTop img {
-        display: none;
+        /* display: none; */
         position: fixed;
         left: 0;
     }
 
-    .menu {
+    /* .menu {
         display: none;
         position: fixed;
         top: 60px;
         left: 40%;
         z-index: 5;
-    }
+    } */
 
     .menu a {
         padding: 10px 0 0 0;
         font-size: 30px;
+
     }
 
     .menu a:hover {

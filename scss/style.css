@@ -34,10 +34,69 @@ header {
       justify-content: space-around;
 }
 
-.headerTop img {
-  max-width: 100%;
+.headerTop .wrapper {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  z-index: 9;
+  height: 110px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.headerTop .wrapper .btn {
+  display: none;
+  height: 40px;
+  width: 45px;
+  z-index: 10;
+  margin: auto 0;
+  position: relative;
+  left: 47%;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.headerTop .wrapper .btn span {
+  width: 40px;
+  height: 6px;
+  display: inline-block;
+  z-index: 12;
+  top: 0;
+  background-color: palegoldenrod;
+  position: absolute;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.headerTop .wrapper .btn span:first-child {
+  top: 1px;
+}
+
+.headerTop .wrapper .btn span:nth-child(2) {
+  top: 14px;
+}
+
+.headerTop .wrapper .btn span:nth-child(3) {
+  top: 27px;
+}
+
+.headerTop .wrapper img {
   width: 176px;
   height: auto;
+  position: fixed;
+  left: 3%;
+}
+
+.headerBottom {
+  margin-top: 10%;
 }
 
 .headerBottom .divider {
@@ -58,10 +117,15 @@ header {
   margin-top: 10vh;
 }
 
+nav {
+  margin-right: 3%;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 27px;
 }
 
 nav ul a {
@@ -73,7 +137,7 @@ nav ul a {
   text-transform: capitalize;
   -webkit-transition: all linear .3s;
   transition: all linear .3s;
-  padding: 47px 25px 0 0;
+  padding: 0 25px 0 0;
 }
 
 nav ul a:hover {
@@ -88,7 +152,7 @@ nav a.pad {
 
 nav a.fa {
   color: #dab33e;
-  padding-top: 55px;
+  margin-top: 6px;
   font-size: 23px;
 }
 
@@ -100,24 +164,6 @@ nav a.fa:focus {
   outline: none;
 }
 
-/* .menuBtn {
-    display: flex;
-    position: fixed;
-    top: 25px;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: blue;
-    color: white;
-    font-size: 16px;
-    line-height: 1.5;
-    padding-bottom: 20px;
-    box-sizing: border-box;
-    padding-bottom: 40px;
-    border: 2px solid green;
-} */
 button {
   cursor: pointer;
   color: #fff;
@@ -440,7 +486,7 @@ button {
   padding: 102px 290px 0 215px;
 }
 
-.imgContainer {
+.sixthBlock .imgContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -490,6 +536,13 @@ button {
 
 .textBox form p {
   color: gold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.textBox form p:first-child {
+  margin-bottom: 10px;
 }
 
 .textBox form label input,
@@ -500,9 +553,10 @@ button {
 
 .textBox form label span {
   line-height: 1.2;
+  margin-left: 60%;
 }
 
-.textBox label input:focus {
+.textBox form label input:focus {
   border: 1px solid #c9a131;
   outline: none;
 }
@@ -510,10 +564,6 @@ button {
 .textBox form label select:focus {
   border: 1px solid #c9a131;
   outline: none;
-}
-
-.textBox form p:first-child {
-  margin-bottom: 10px;
 }
 
 .textBox form input:nth-child(1) {
@@ -547,6 +597,10 @@ button {
   padding-left: 73px;
 }
 
+.textBox form label input:last-child {
+  overflow: hidden;
+}
+
 #calendar {
   display: block;
   background-image: url(../img/sixthBlock-img/calendar.png);
@@ -556,45 +610,21 @@ button {
   cursor: pointer;
 }
 
-.textBox form label input:last-child {
-  overflow: hidden;
-}
-
-.textBox form p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.textBox form label span {
-  margin-left: 60%;
-}
-
 /* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   padding-top: 150px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
 }
 
-/* Modal Content */
-.modal-content {
+.modal .modal-content {
   background-color: #fefefe;
   margin: -5% auto 0;
   border: 1px solid #888;
@@ -621,9 +651,15 @@ button {
   border-radius: 20px;
 }
 
-/* The Close Button */
-.close {
-  color: white;
+.modal-header {
+  padding: 30px 16px;
+  background-color: #b58200;
+  color: #fff;
+  font-size: 25px;
+}
+
+.modal-header .close {
+  color: #fff;
   float: right;
   font-size: 40px;
   font-weight: bold;
@@ -631,23 +667,13 @@ button {
           transform: translateY(-10px);
 }
 
-.close:hover,
-.close:focus {
+.modal-header .close:hover, .modal-header .close:focus {
   color: #824e01;
   text-decoration: none;
   cursor: pointer;
 }
 
-/* Modal Header */
-.modal-header {
-  padding: 30px 16px;
-  background-color: #b58200;
-  color: white;
-  font-size: 25px;
-}
-
-/* Modal Body */
-.modal-body {
+#myModal .modal-body {
   padding: 20px 16px;
   font-size: 20px;
 }
@@ -656,15 +682,13 @@ button {
   color: black;
 }
 
-/* Modal Footer */
 .modal-footer {
   padding: 30px 16px;
   background-color: #b58200;
-  color: white;
+  color: #fff;
   font-size: 25px;
 }
 
-/* Add Animation */
 @-webkit-keyframes animatetop {
   from {
     top: -300px;
@@ -675,6 +699,7 @@ button {
     opacity: 1;
   }
 }
+
 @keyframes animatetop {
   from {
     top: -300px;
@@ -689,30 +714,14 @@ button {
 /* ........................... FOOTER ........................*/
 footer {
   margin-top: 50px;
+  min-height: 300px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.93);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  min-height: 300px;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.93);
-}
-
-.bottom div h1,
-p {
-  color: white;
-}
-
-.bottom div h1 {
-  font-family: 'Yeseva One';
-  font-size: 21px;
-}
-
-.bottom div p {
-  font-family: 'Lato';
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 footer div {
@@ -728,23 +737,18 @@ footer div {
           flex-direction: column;
 }
 
-footer div:first-child {
-  width: 100%;
-  max-width: 300px;
-}
-
 footer div h1,
 footer div img {
   margin-bottom: 20px;
 }
 
-footer .fDivider {
-  margin-left: -50px;
-  width: 200px;
-}
-
 footer div div {
   margin-top: 25px;
+}
+
+footer div:first-child {
+  width: 100%;
+  max-width: 300px;
 }
 
 footer div:nth-child(n+2) {
@@ -786,8 +790,48 @@ footer div:nth-child(n+2) div img {
 }
 
 footer div .fa {
-  color: white;
+  color: #fff;
   margin-top: 25px;
   padding-right: 10px;
+}
+
+footer .fDivider {
+  margin-left: -50px;
+  width: 200px;
+}
+
+.bottom div h1,
+.bottom div p {
+  color: #fff;
+}
+
+.bottom div h1 {
+  font-family: 'Yeseva One';
+  font-size: 21px;
+}
+
+.bottom div p {
+  font-family: 'Lato';
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#toTop {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background-color: darkgreen;
+  color: #fff;
+  padding: 5px 5px 2px;
+  width: 50px;
+  border-radius: 30%;
+  outline: none;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+#toTop:hover {
+  -webkit-box-shadow: 0 0 20px yellow;
+          box-shadow: 0 0 20px yellow;
 }
 /*# sourceMappingURL=style.css.map */

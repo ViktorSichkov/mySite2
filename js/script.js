@@ -17,3 +17,25 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+// Button "TOP"
+
+window.onload = function () {
+    var scrolled;
+    var timer;
+    document.getElementById('toTop').onclick = function () {
+        scrolled = window.pageYOffset;
+        scrollToTop();
+    }
+
+    function scrollToTop() {
+        if (scroll > 0) {
+            window.scrollTo(0, scrolled);
+            scrolled = scrolled - 50; //100- швидкість прокрутки
+            timer = setTimeout(scrollToTop, 100);
+        } else {
+            clearTimeout(timer);
+            window.scrollTo(0, 0);
+        }
+    }
+}

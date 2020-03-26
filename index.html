@@ -31,28 +31,43 @@
         <section>
             <header>
                 <div class="headerTop">
-                    <div class="btn">
-                        <span></span>
-                    </div>
-                    <img src="img/icon.png" alt="logo">
 
-                    <nav>
-                        <ul class="menu">
-                            <a href="#">Home</a>
-                            <a href="#">About</a>
-                            <a href="#">Ingredients</a>
-                            <a href="#">Menu</a>
-                            <a href="#">Reviews</a>
-                            <a href="#" class="pad">Reservations</a>
-                            <a href="https://twitter.com/" class="pad fa fa-twitter" target="_blank">
-                            </a>
-                            <a href="https://www.youtube.com/" class="pad fa fa-youtube" target="_blank">
-                            </a>
-                            <a href="https://uk-ua.facebook.com/" class="pad fa fa-facebook" target="_blank">
-                            </a>
-                        </ul>
-                    </nav>
+                    <!--................ Burger Menu ..................-->
+
+                    <div class="wrapper">
+                        <!-- <label for="burger">
+                            <input type="checkbox" name="burger" id="burger"> -->
+
+                        <div class="btn" id="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        </label>
+
+                        <img src="img/icon.png" alt="logo">
+
+                        <nav>
+                            <ul class="menu">
+                                <a href="#">Home</a>
+                                <a href="#">About</a>
+                                <a href="#">Ingredients</a>
+                                <a href="#">Menu</a>
+                                <a href="#">Reviews</a>
+                                <a href="#" class="pad">Reservations</a>
+                                <a href="https://twitter.com/" class="pad fa fa-twitter" target="_blank">
+                                </a>
+                                <a href="https://www.youtube.com/" class="pad fa fa-youtube" target="_blank">
+                                </a>
+                                <a href="https://uk-ua.facebook.com/" class="pad fa fa-facebook" target="_blank">
+                                </a>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
+
+                <!--........... // Burger Menu .............-->
+
                 <div class="headerBottom">
                     <h1>the right ingredients <br> for the right food</h1>
                     <img src="img/divider.png" class="divider" alt="img">
@@ -80,6 +95,7 @@
         </section>
 
         <section class="thirdBlock">
+            <!-- <i class="fa fa-hand-o-up" aria-hidden="true" id="top"></i> -->
             <div class="square">
                 <h1>Fine ingredients</h1>
                 <img src="img/thirdBlock_img/divider3.png" alt="divider">
@@ -179,7 +195,7 @@
                         </p>
                         <p>
                             <label>Date<span></span><input id="calendar" required type="datetime" maxlength="15"
-                                    name="menu" placeholder="date *" id="name1" id="menu"></label>
+                                    name="menu" placeholder="date *" id="menu"></label>
                             <label>Party number <br><select required name="name[]">
                                     <option value="first">Party number 1</option>
                                     <option value="second">Party number 2</option>
@@ -257,6 +273,7 @@
             </div>
         </div>
     </footer>
+    <button id="toTop">Top</button>
     </div>
     <script src="js/script.js"></script>
 </body>
