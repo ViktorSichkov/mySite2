@@ -25,7 +25,6 @@ header {
     height: 100vh;
     background-image: url(../img/bg1.jpg);
     background-size: cover;
-
 }
 
 .headerTop {
@@ -39,29 +38,6 @@ header {
         z-index: 9;
         height: 110px;
         align-content: center;
-        // #burger {
-        //     visibility: hidden;
-        // }
-
-        // #burger:checked~.btn:before {
-        //     transform: rotate(45deg);
-        // }
-
-        // #burger:checked~.btn span {
-        //     transform: rotate(-45deg);
-        //     top: 13px;
-
-        // }
-
-        // #burger:checked~.btn:after {
-        //     // visibility: hidden;
-        //     height: 0;
-        // }
-
-        // #burger:checked~.menu {
-        //     display: block;
-
-        // }
 
         .btn {
             display: none;
@@ -75,28 +51,6 @@ header {
             cursor: pointer;
             overflow: hidden;
             box-sizing: border-box;
-
-            // display: none;
-            // &:before,
-            // &:after {
-            //     content: "";
-            //     width: 100%;
-            //     height: 4px;
-            //     background-color: palegoldenrod;
-            //     position: absolute;
-            //     left: 0;
-
-            // }
-
-            // &:before {
-            //     top: 13px;
-            //     background-color: palegoldenrod;
-            //     transition: 0.2s linear;
-            // }
-
-            // &:after {
-            //     top: 26px;
-            // }
 
             span {
                 width: 40px;
@@ -125,11 +79,6 @@ header {
         }
 
         img {
-            // display: flex;
-            // flex: 0 1 146px;
-            // margin-left: 3%;
-            // transform: translateY(-7px);
-            // border: 2px solid blue;
             width: 176px;
             height: auto;
             position: fixed;
@@ -154,16 +103,18 @@ header {
         font-family: $font;
         @include font(90px, 1.3);
         color: $baseColor;
-        margin-top: 10vh;
+        //        margin-top: 10vh;
     }
 }
 
 nav {
     margin-right: 3%;
+    z-index: 99;
 
     ul {
         display: flex;
         margin-top: 27px;
+        z-index: 99;
 
         a {
             color: hsl(0, 0%, 100%);
@@ -201,7 +152,6 @@ nav {
     }
 }
 
-
 button {
     cursor: pointer;
     color: $baseColor;
@@ -214,10 +164,10 @@ button {
 }
 
 .btnContainer {
-    margin: 5vh 0 0 31.5vw;
+    //    margin: 5vh 0 0 31.5vw;
 
     .fbtn {
-        margin-right: 28px;
+        //        margin-right: 28px;
         background-color: rgba(38, 37, 28, 0.7);
         transition: .3s linear;
         @include border(black);
@@ -311,29 +261,6 @@ button {
     background-image: url("../img/thirdBlock_img/bg3.jpg");
     background-size: cover;
     @include pad (6% 15% 0 0);
-
-    // .fa-hand-o-up {
-    //     float: left;
-    //     position: fixed;
-    //     top: 15vh;
-    //     right: 5vh;
-    //     z-index: 50;
-    //     font-size: 50px;
-    //     color: white;
-    //     background-color: black;
-    //     height: 50px;
-    //     width: 50px;
-    //     padding: 15px;
-    //     display: inline-block;
-    //      overflow: hidden;
-    //     border-radius: 50%;
-    //     border: 3px solid white;
-    //     box-sizing: content-box;
-    //     text-align: center;
-
-
-    // }
-
 
     .square div {
         margin-top: 10%;
@@ -803,7 +730,7 @@ footer {
     position: fixed;
     right: 30px;
     bottom: 30px;
-    background-color: darkgreen;
+    background-color: goldenrod;
     color: $baseColor;
     padding: 5px 5px 2px;
     width: 50px;
@@ -812,6 +739,8 @@ footer {
     transition: 0.3s linear;
 
     &:hover {
-        box-shadow: 0 0 20px yellow;
+        background-color: #805f05;
+        border: 3px solid #2e2305;
+
     }
 }

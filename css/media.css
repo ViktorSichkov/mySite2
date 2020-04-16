@@ -4,142 +4,232 @@
 480px
 320px */
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px),
+(min-width: 1200px) {
     .wrapper {
         padding-top: 0;
     }
 
-
     .headerBottom h1 {
-        color: green;
-    }
-}
-
-@media (max-width: 992px) {
-
-    .headerTop {
-        justify-content: space-between;
+        margin-top: 20vh;
+        color: whitesmoke;
+        /*        color: green;*/
     }
 
-    .headerTop img {
-        max-width: 110px;
-        margin: 27px 0 0 10px;
+    @media (max-width: 1200px) {
+        .headerTop img {
+            max-width: 150px;
+            margin: 5px 0 0 -10px;
+        }
+
+        nav ul .fa:last-child {
+            margin-right: 0;
+            padding-right: 0;
+        }
     }
 
-    #burger {
-        display: block;
+    @media (max-width: 992px) {
+
+        .headerTop {
+            justify-content: space-between;
+        }
+
+        /*................................  Burger menu apires ...................................... */
+
+        #burger {
+            display: block;
+            z-index: 12;
+            position: fixed;
+            top: 38px;
+            left: 50%;
+        }
+
+        /*............................. //  Burger menu apires ...................................... */
+
+        .headerTop img {
+            max-width: 160px;
+            margin: 5px 0 0 10px;
+        }
+
+
+        /*.................................. Menu disapires ........................................ */
+
+        .menu {
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            top: 40px;
+            left: 43.5%;
+            z-index: 12;
+            margin-top: 60px;
+        }
+
+        /*................ // Menu disapires ......................... */
+
+        .menu a {
+            padding: 10px 0 0 0;
+            font-size: 27px;
+            z-index: 12;
+        }
+
+        .menu a.pad {
+            padding: 10px 10px 0 13px;
+        }
+
+        .headerBottom h1 {
+            font-size: 70px;
+            margin-top: 23vh;
+            margin-bottom: 10vh;
+            /*        color: blue;*/
+        }
+
+        .bottom div:nth-child(n+2)>img {
+            max-width: 100%;
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
-    .menu {
-        /* display: none; */
-        position: fixed;
-        top: 60px;
-        left: 40%;
-        z-index: 12;
+    @media (max-width: 850px) {
+        .headerTop {
+            position: relative;
+        }
+
+        .headerTop img {
+            position: fixed;
+            left: 0;
+        }
+
+        .menu {
+            left: 42%;
+        }
+
+        a.fa {
+            transform: translateX(6px);
+        }
+
+        .headerBottom h1 {
+            font-size: 65px;
+            margin-bottom: 12.11vh;
+            /*        color: yellow;*/
+        }
+
+        footer {
+            padding: 10px 0 0 0;
+        }
+
+        footer div:nth-child(-n+2) {
+            margin-bottom: 15px;
+        }
+
+        .bottom div {
+            display: block;
+            width: 100%;
+            height: 100vh;
+        }
+
+        footer div:nth-child(n+2) div img,
+        footer div:nth-child(n+2) div .fa {
+            transform: translateY(-20px);
+        }
     }
 
+    @media (max-width: 768px) {
+        .menu {
+            left: 41%;
+        }
 
+        .headerBottom h1 {
+            font-size: 60px;
+            margin-bottom: 13.93vh;
+            /*        color: red;*/
+        }
 
-    .btn:hover nav {
-        display: block;
+        .bottom {
+            flex-flow: row wrap;
+        }
+
+        .bottom div h1 {
+            margin-top: 25vh;
+            font-size: 25px;
+        }
+
+        .bottom div p {
+            font-size: 20px;
+        }
+
+        .bottom div span {
+            font-size: 18px;
+        }
+
+        .bottom div:nth-child(2) span img {
+            width: 45px;
+            height: 23px;
+        }
+
+        .bottom div:nth-child(3) div a .fa {
+            font-size: 70px;
+        }
     }
 
-    .btn:hover .menu {
-        display: flex;
-        flex-direction: row;
+    @media (max-width: 700px) {
+        /* .headerBottom h1 {
+            color: deeppink;
+        } */
+
+        .menu {
+            left: 39.5%;
+        }
     }
 
-    .btn:hover .menu a {
-        display: block;
+    @media (max-width: 655px) {
+        .headerBottom h1 {
+            /* color: black; */
+            margin-bottom: 15.2vh;
+            font-size: 57px;
+        }
     }
 
+    @media (max-width: 650px) {
+        .headerBottom h1 {
+            /* color: aqua; */
+            margin-bottom: 15.2vh;
+        }
 
-    /* #burger:checked~.menu {
-        display: block;
-
-    } */
-
-    .menu a {
-        padding: 47px 10px 0 0;
+        .menu {
+            left: 38.5%;
+        }
     }
 
-    .headerBottom h1 {
-        color: blue;
-    }
-}
-
-@media (max-width: 850px) {
-    .headerTop {
-        position: relative;
+    @media (max-width: 624px) {
+        .headerBottom h1 {
+            /* color: greenyellow; */
+            margin-bottom: 10vh;
+        }
     }
 
-    .headerTop img {
-        /* display: none; */
-        position: fixed;
-        left: 0;
+    @media (max-width: 550px) {
+        /* .headerBottom h1 {
+            color: navajowhite;
+        } */
+
+        .menu {
+            left: 37%;
+        }
     }
 
-    /* .menu {
-        display: none;
-        position: fixed;
-        top: 60px;
-        left: 40%;
-        z-index: 5;
-    } */
-
-    .menu a {
-        padding: 10px 0 0 0;
-        font-size: 30px;
-
+    @media (max-width: 547px) {
+        /* .headerBottom h1 {
+            color: blue;
+        } */
     }
 
-    .menu a:hover {
-        text-decoration: none;
-    }
-
-    .menu a.pad {
-        padding: 20px 10px 0 13px;
-    }
-
-    a.fa {
-        transform: translateX(6px);
-    }
-
-    .headerBottom h1 {
-        color: yellow;
-    }
-
-    footer {
-        padding: 10px 0 0 0;
-    }
-
-    footer div:nth-child(-n+2) {
-        margin-bottom: 15px;
-    }
-
-    .bottom div {
-        display: block;
-        width: 100%;
-        height: 100vh;
-    }
-
-    footer div:nth-child(n+2) div img,
-    footer div:nth-child(n+2) div .fa {
-        transform: translateY(-20px);
-    }
-}
-
-
-@media (max-width: 768px) {
-    .headerBottom h1 {
-        color: red;
-    }
-
-    .bottom {
-        flex-flow: row wrap;
-    }
-
-    .bottom div h1 {
-        font-size: 15px;
+    @media (max-width: 521px) {
+        .headerBottom h1 {
+            /* color: black; */
+            margin-top: 19vh;
+            margin-bottom: 0;
+        }
     }
 }

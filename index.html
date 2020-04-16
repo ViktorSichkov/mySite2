@@ -23,29 +23,36 @@
         rel="stylesheet">
     <link rel="stylesheet" href="scss/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Lambda</title>
 </head>
 
 <body>
+
     <div class="container">
         <section>
+
             <header>
+
                 <div class="headerTop">
 
-                    <!--................ Burger Menu ..................-->
-
                     <div class="wrapper">
-                        <!-- <label for="burger">
-                            <input type="checkbox" name="burger" id="burger"> -->
+
+                        <!--................ Burger Menu ..................-->
 
                         <div class="btn" id="burger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <span class="firstLine"></span>
+                            <span class="secondLine"></span>
+                            <span class="thirdLine"></span>
                         </div>
-                        </label>
+
+                        <!--..............// Burger Menu ..................-->
+
+                        <div class="menuCover"></div>
 
                         <img src="img/icon.png" alt="logo">
+
+                        <!--..................... Menu .....................-->
 
                         <nav>
                             <ul class="menu">
@@ -66,14 +73,15 @@
                     </div>
                 </div>
 
-                <!--........... // Burger Menu .............-->
+
+                <!--...................// Menu .....................-->
 
                 <div class="headerBottom">
                     <h1>the right ingredients <br> for the right food</h1>
                     <img src="img/divider.png" class="divider" alt="img">
 
                     <div class="btnContainer">
-                        <a href="#bookTable"><button class="fbtn">Book a table</button></a>
+                        <a href="#bottom"><button class="fbtn">Book a table</button></a>
                         <a href="#menu"><button class="sbtn">See the menu</button></a>
                     </div>
                 </div>
@@ -223,59 +231,59 @@
                                     <h3>Modal Footer</h3>
                                 </div>
                             </div>
-
                         </div>
-
-
-
-
+                    </form>
                 </div>
-
-
-                </form>
             </div>
+        </section>
 
-    </div>
-    </section>
-
-    <footer class="bottom">
-        <div>
-            <h1>About Us</h1>
-            <img src="img/thirdBlock_img/divider3.png" alt="divider">
-            <p>Lambda's new and expanded Chelsea location represents a truly authentic <span
-                    style="font-weight: bold;">Greek</span> patisserie,
-                featuring
-                breakfasts of fresh croissants and steaming bowls of cafe. <br>Lambda the best restaurant in town
-            </p>
-        </div>
-        <div>
-            <h1>Opening Hours</h1>
-            <img src="img/thirdBlock_img/divider3.png" alt="divider">
-            <p><span style="font-weight: bold;">Mon-Thu:</span> 7.00am-8.00pm</p>
-            <p><span style="font-weight: bold;">Fri-Sun:</span> 7.00am-10.00pm</p>
+        <footer class="bottom">
             <div>
-                <span><img src="img/footer_img/1.png" alt="card"></span>
-                <span><img src="img/footer_img/2.png" alt="card"></span>
-                <span><img src="img/footer_img/3.png" alt="card"></span>
-                <span><img src="img/footer_img/4.png" alt="card"></span>
+                <h1>About Us</h1>
+                <img src="img/thirdBlock_img/divider3.png" alt="divider">
+                <p>Lambda's new and expanded Chelsea location represents a truly authentic <span
+                        style="font-weight: bold;">Greek</span> patisserie,
+                    featuring
+                    breakfasts of fresh croissants and steaming bowls of cafe. <br>Lambda the best restaurant in town
+                </p>
             </div>
-        </div>
-        <div>
-            <h1>Our Location</h1>
-            <img src="img/thirdBlock_img/divider3.png" alt="divider">
-            <p><span style="font-weight: bold;">19th Paradise Street Sitia</span></p>
-            <p><span style="font-weight: bold;">128 Meserole Avenue</span></p>
             <div>
-                <i class="fa fa-facebook" aria-hidden="true" style="font-size: 20px;"></i>
-                <i class="fa fa-youtube" aria-hidden="true" style="font-size: 20px;"></i>
-                <i class="fa fa-twitter" aria-hidden="true" style="font-size: 20px;"></i>
-                <i class="fa fa-instagram" aria-hidden="true" style="font-size: 20px;"></i>
+                <h1>Opening Hours</h1>
+                <img src="img/thirdBlock_img/divider3.png" alt="divider">
+                <p><span style="font-weight: bold;">Mon-Thu:</span> 7.00am-8.00pm</p>
+                <p><span style="font-weight: bold;">Fri-Sun:</span> 7.00am-10.00pm</p>
+                <div>
+                    <span><img src="img/footer_img/1.png" alt="card"></span>
+                    <span><img src="img/footer_img/2.png" alt="card"></span>
+                    <span><img src="img/footer_img/3.png" alt="card"></span>
+                    <span><img src="img/footer_img/4.png" alt="card"></span>
+                </div>
             </div>
-        </div>
-    </footer>
-    <button id="toTop">Top</button>
+            <div>
+                <h1>Our Location</h1>
+                <img src="img/thirdBlock_img/divider3.png" alt="divider">
+                <p><span style="font-weight: bold;">19th Paradise Street Sitia</span></p>
+                <p><span style="font-weight: bold;">128 Meserole Avenue</span></p>
+                <div>
+                    <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true" style="font-size: 20px;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-youtube" aria-hidden="true" style="font-size: 20px;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true" style="font-size: 20px;"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true" style="font-size: 20px;"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <a href="#toTop"><button id="toTop">Top</button></a>
     </div>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
