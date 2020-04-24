@@ -164,10 +164,17 @@ button {
 }
 
 .btnContainer {
-    //    margin: 5vh 0 0 31.5vw;
+    width: 482px;
+    height: 75px;
+    position: relative;
+    margin: 5vh auto 0;
+
+    &.fbtn,
+    &.sbtn {
+        position: absolute;
+    }
 
     .fbtn {
-        //        margin-right: 28px;
         background-color: rgba(38, 37, 28, 0.7);
         transition: .3s linear;
         @include border(black);
@@ -176,13 +183,13 @@ button {
             color: greenyellow;
             @include border(greenyellow);
         }
-
     }
 
     .sbtn {
         background-color: rgba(185, 169, 92, 0.8);
         transition: .3s linear;
         @include border(#fff);
+        margin-left: 15px;
 
         &:hover {
             background: rgba(38, 37, 28, 0.7);
@@ -482,6 +489,7 @@ button {
         display: flex;
         flex-flow: column wrap;
         text-align: left;
+        margin-top: 20px;
 
         p {
             color: gold;
@@ -557,7 +565,7 @@ button {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 11;
     padding-top: 150px;
     left: 0;
     top: 0;
@@ -579,14 +587,16 @@ button {
 }
 
 #myBtn {
+    background-color: rgba(192, 166, 37, 0.8);
     transition: .3s linear;
+    @include border(#fff);
     cursor: pointer;
 
     &:hover {
-        background-color: #805f05;
-        border-right: 5px solid #2e2305;
-        border-left: 5px solid #2e2305;
+        background: rgb(8, 8, 7);
         border-radius: 20px;
+        color: $baseColor;
+        @include border(#fff);
     }
 }
 
@@ -682,30 +692,42 @@ footer {
                 align-self: center;
                 justify-content: center;
                 height: 50px;
+
             }
 
-            & div img {
+            & div i {
                 display: flex;
-                margin-top: 25px;
-                width: 38px;
-                height: 18px;
-                padding-right: 10px;
+                margin-top: 15px;
+                font-size: 22px;
+                padding-right: 13px;
+                cursor: pointer;
+                transition: 0.3s linear;
+
+                &:hover {
+                    font-size: 30px;
+                }
             }
         }
-
-        .fa {
-            color: $baseColor;
-            margin-top: 25px;
-            padding-right: 10px;
-        }
-
     }
 
-    .fDivider {
-        margin-left: -50px;
-        width: 200px;
+
+    .fa {
+        color: $baseColor;
+        margin-top: 25px;
+        padding-right: 10px;
     }
+
 }
+
+div:nth-child(2) .first {
+    margin-left: 5px;
+}
+
+.fDivider {
+    margin-left: -50px;
+    width: 200px;
+}
+
 
 .bottom div {
 
@@ -730,17 +752,13 @@ footer {
     position: fixed;
     right: 30px;
     bottom: 30px;
-    background-color: goldenrod;
-    color: $baseColor;
-    padding: 5px 5px 2px;
-    width: 50px;
-    border-radius: 30%;
+    transition: .3s linear;
+    color: rgba(185, 169, 92, 0.8);
+    border: 3px solid goldenrod;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 40px;
     outline: none;
     transition: 0.3s linear;
 
-    &:hover {
-        background-color: #805f05;
-        border: 3px solid #2e2305;
-
-    }
 }
