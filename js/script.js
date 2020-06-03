@@ -28,6 +28,15 @@ $("a[href='#bottom']").click(function () {
   );
 });
 
+$("a[href='#Reservations']").click(function () {
+  $("body, html").animate(
+    {
+      scrollTop: 3410,
+    },
+    800
+  );
+});
+
 $(".sbtn").click(function () {
   $("body, html").animate(
     {
@@ -36,6 +45,8 @@ $(".sbtn").click(function () {
     800
   );
 });
+
+
 
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -69,25 +80,25 @@ $(document).ready(function () {
 
 /* .............. // Menu Toggle ................. */
 
-var modal = document.getElementById("myModal");
+// var modal = document.getElementById("myModal");
 
-var btn = document.getElementById("myBtn");
+// var btn = document.getElementById("myBtn");
 
-var span = document.getElementsByClassName("close")[0];
+// var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function () {
-  modal.style.display = "block";
-};
+// btn.onclick = function () {
+//   modal.style.display = "block";
+// };
 
-span.onclick = function () {
-  modal.style.display = "none";
-};
+// span.onclick = function () {
+//   modal.style.display = "none";
+// };
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// };
 
 /*  ................................... Calendar .....................................*/
 
@@ -99,6 +110,8 @@ $(document).ready(function () {
       changeMonth: true,
       showWeek: true,
       showOtherMonths: true,
+      minDate: new Date(2020,5,21),
+      maxDate: new Date(2021,0,1)
     })
     .css({
       color: "green",
@@ -128,3 +141,31 @@ $(document).ready(function () {
 //        }
 //    }
 //}
+
+/*  ....................... Second block ............................*/
+
+$(document).ready(function() {
+//	$(".rightSide img").click(function(){
+//		$(".dish, .fish, .sweet").addClass("show", 'slow');
+//	});
+	$(".rightSide .dish").click(function(){
+		$(this).animate({top: '-102%'}, "slow");
+		$(".sweet").animate({top: '0%'}, 0);
+	});
+	$(".rightSide .sweet").click(function(){
+		$(this).animate({top: '-102%'}, "slow");
+		$(".fish").animate({top: '0%'}, 0);
+	});
+	$(".rightSide .fish").click(function(){
+		$(".fish").animate({top: '-102%'}, "slow");
+      $(".dish").animate({top: '0%'}, "slow");
+    });
+	});
+
+
+/*  ...................... // Second block ..........................*/
+
+/*  ....................... Six block ............................*/
+
+
+/*  .....................// Six block ............................*/

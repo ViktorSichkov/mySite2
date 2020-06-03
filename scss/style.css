@@ -10,23 +10,30 @@ html {
           box-sizing: inherit;
 }
 
+body {
+  background-color: rgba(211, 198, 132, 0.1);
+}
+
 a {
   text-decoration: none;
 }
 
 .container {
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 header {
   max-width: 1600px;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../img/bg1.jpg);
   background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.headerTop {
+header .headerTop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +41,7 @@ header {
       justify-content: space-around;
 }
 
-.headerTop .wrapper {
+header .headerTop .wrapper {
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,7 +56,7 @@ header {
       align-content: center;
 }
 
-.headerTop .wrapper .btn {
+header .headerTop .wrapper .btn {
   display: none;
   height: 40px;
   width: 45px;
@@ -64,7 +71,7 @@ header {
           box-sizing: border-box;
 }
 
-.headerTop .wrapper .btn span {
+header .headerTop .wrapper .btn span {
   width: 40px;
   height: 6px;
   display: inline-block;
@@ -76,30 +83,30 @@ header {
   transition: 0.2s linear;
 }
 
-.headerTop .wrapper .btn span:first-child {
+header .headerTop .wrapper .btn span:first-child {
   top: 1px;
 }
 
-.headerTop .wrapper .btn span:nth-child(2) {
+header .headerTop .wrapper .btn span:nth-child(2) {
   top: 14px;
 }
 
-.headerTop .wrapper .btn span:nth-child(3) {
+header .headerTop .wrapper .btn span:nth-child(3) {
   top: 27px;
 }
 
-.headerTop .wrapper img {
-  width: 176px;
+header .headerTop .wrapper img {
+  width: 150px;
   height: auto;
   position: fixed;
   left: 3%;
 }
 
-.headerBottom {
+header .headerBottom {
   margin-top: 10%;
 }
 
-.headerBottom .divider {
+header .headerBottom .divider {
   width: 234px;
   height: 46px;
   margin: 4vh auto 0;
@@ -108,20 +115,20 @@ header {
   display: block;
 }
 
-.headerBottom h1 {
+header .headerBottom h1 {
   font-family: "Yeseva One", cursive;
-  font-size: 90px;
+  font-size: 80px;
   line-height: 1.3;
   text-align: center;
   color: #fff;
 }
 
-nav {
+header nav {
   margin-right: 3%;
   z-index: 99;
 }
 
-nav ul {
+header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,7 +136,7 @@ nav ul {
   z-index: 99;
 }
 
-nav ul a {
+header nav ul a {
   color: white;
   font-size: 24px;
   line-height: 1.5;
@@ -141,75 +148,90 @@ nav ul a {
   padding: 0 25px 0 0;
 }
 
-nav ul a:hover {
+header nav ul a:hover {
   -webkit-transform: scale(1.06);
           transform: scale(1.06);
   text-decoration: underline;
 }
 
-nav a.pad {
+header nav a.pad {
   padding-right: 13px;
 }
 
-nav a.fa {
+header nav a.fa {
   color: #dab33e;
   margin-top: 6px;
   font-size: 23px;
 }
 
-nav a.fa:hover {
+header nav a.fa:hover {
   color: #fff;
+  text-decoration: none;
 }
 
-nav a.fa:focus {
+header nav a.fa:focus {
   outline: none;
 }
 
-button {
-  cursor: pointer;
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 21px 53px 21px;
-  vertical-align: auto;
-  white-space: nowrap;
-  width: 229px;
-}
-
-.btnContainer {
-  width: 482px;
-  height: 75px;
-  position: relative;
+header .btnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 350px;
+  min-height: 75px;
+  height: 100%;
   margin: 5vh auto 0;
+  border: 3px solid green;
 }
 
-.btnContainer.fbtn, .btnContainer.sbtn {
+header .btnContainer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  max-width: 165px;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+}
+
+header .btnContainer div a {
   position: absolute;
-}
-
-.btnContainer .fbtn {
-  background-color: rgba(38, 37, 28, 0.7);
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 22px 0 0;
   -webkit-transition: .3s linear;
   transition: .3s linear;
+}
+
+header .btnContainer div a.fbtn {
+  background-color: rgba(38, 37, 28, 0.7);
   border: 1px solid black;
 }
 
-.btnContainer .fbtn:hover {
+header .btnContainer div a.fbtn:hover {
   color: greenyellow;
   border: 1px solid greenyellow;
 }
 
-.btnContainer .sbtn {
+header .btnContainer div a.sbtn {
   background-color: rgba(185, 169, 92, 0.8);
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
   border: 1px solid #fff;
-  margin-left: 15px;
 }
 
-.btnContainer .sbtn:hover {
+header .btnContainer div a.sbtn:hover {
   background: rgba(38, 37, 28, 0.7);
   color: #fff;
   border: 1px solid #fff;
@@ -217,31 +239,51 @@ button {
 
 /* ...............SECOND BLOCK.......................................... */
 .secondBlock {
-  height: 700px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
 .secondBlock .leftSide {
-  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 2 50%;
+          flex: 0 2 50%;
 }
 
 .secondBlock .leftSide h2 {
   font-family: "Yeseva One", cursive;
   color: #cc9900;
+  padding-top: 5vh;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  padding: 105px 105px 20px 150px;
+}
+
+.secondBlock .leftSide .divider {
+  margin: 10px auto;
 }
 
 .secondBlock .leftSide p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   font-family: "Lato", cursive;
-  padding-left: 23%;
-  width: 80%;
+  padding: 0 10%;
+  text-align: center;
   word-wrap: break-word;
   color: #000;
   font-size: 16px;
@@ -249,31 +291,79 @@ button {
   text-align: center;
 }
 
-.secondBlock .leftSide .cook_img {
-  margin-top: 53px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+.secondBlock .leftSide .wrapper_cook_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
+  position: relative;
+  overflow: hidden;
 }
 
-.secondBlock .divider {
-  width: 240px;
-  height: 25px;
-  display: block;
-  margin: 0 auto 30px 34%;
+.secondBlock .leftSide .wrapper_cook_img .cook_img {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .secondBlock .rightSide {
-  height: 700px;
-  padding-top: 76px;
-  padding-right: 10%;
-  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 auto;
+          flex: 2 1 auto;
 }
 
-.secondBlock .rightSide img {
-  height: auto;
-  max-width: 551px;
+.secondBlock .rightSide #slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 100%;
+          flex: 2 1 100%;
+  overflow: hidden;
+}
+
+.secondBlock .rightSide #slider #polosa {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 100%;
+          flex: 2 1 100%;
+}
+
+.secondBlock .rightSide #slider #polosa img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  cursor: pointer;
+}
+
+.secondBlock .rightSide #slider #polosa img.fish, .secondBlock .rightSide #slider #polosa img .sweet {
+  width: 100%;
+  height: 100%;
+}
+
+.secondBlock .rightSide #slider #polosa img.dish {
+  z-index: 3;
 }
 
 .thirdBlock {
@@ -287,97 +377,160 @@ button {
   height: 100vh;
   background-image: url("../img/thirdBlock_img/bg3.jpg");
   background-size: cover;
-  padding: 6% 15% 0 0;
-}
-
-.thirdBlock .square div {
-  margin-top: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 0 12%;
-  margin-top: 20%;
-}
-
-.thirdBlock .square div img {
-  margin-right: 6%;
-  margin-left: -23%;
-}
-
-.square {
-  position: relative;
-  top: -5%;
-  width: 500px;
-  height: 500px;
-  background: rgba(0, 0, 0, 0.6);
-  padding-top: 3.7%;
+  padding: 6% 15% 20px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.square h1,
-.square p {
+.thirdBlock .square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 500px;
+  max-height: 500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 0 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.thirdBlock .square .devider3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  position: relative;
+  top: -25px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  max-width: 55%;
+  max-height: 10%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.thirdBlock .square .imgBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  height: 20%;
+  margin-top: 10%;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.thirdBlock .square .imgBox div {
+  position: relative;
+  max-width: 100px;
+  width: 100%;
+  max-height: 100px;
+  height: 100%;
+}
+
+.thirdBlock .square .imgBox div img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s linear all;
+  transition: 0.3s linear all;
+  border-radius: 50%;
+}
+
+.thirdBlock .square h1, .thirdBlock .square p {
   color: #fff;
   text-align: center;
 }
 
-.square h1 {
+.thirdBlock .square h1 {
   font-family: 'Yeseva One';
   font-size: 36px;
-  margin-bottom: 20px;
 }
 
-.square p {
+.thirdBlock .square p {
   padding: 0 11%;
 }
 
-.square img {
-  padding-left: 25%;
-  margin-bottom: 4%;
-}
-
 .fourthBlock {
+  max-width: 100%;
   background: #fff;
-  padding-left: 7.5%;
-  margin-top: 4%;
+  background-color: rgba(211, 198, 132, 0.1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.fourthBlock .boxWrapper1,
-.fourthBlock .boxWrapper2 {
+.fourthBlock .boxWrapper {
+  margin: 2% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100%;
-  max-width: 1150px;
-  text-align: center;
-  margin-bottom: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 2px solid blue;
 }
 
-.fourthBlock .boxWrapper1 div,
-.fourthBlock .boxWrapper2 div {
-  width: 40%;
+.fourthBlock .boxWrapper div {
+  border: 1px solid blueviolet;
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.fourthBlock .boxWrapper1 div h1,
-.fourthBlock .boxWrapper2 div h1 {
+.fourthBlock .boxWrapper div h1 {
   color: #cc9900;
   font-size: 30px;
   font-family: 'Yeseva One';
 }
 
-.fourthBlock .boxWrapper1 div img,
-.fourthBlock .boxWrapper2 div img {
+.fourthBlock .boxWrapper div img {
   padding: 10px 0;
   width: auto;
   height: auto;
 }
 
-.fourthBlock .boxWrapper1 div p,
-.fourthBlock .boxWrapper2 div p {
+.fourthBlock .boxWrapper div p {
+  border: 2px solid green;
   padding-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
@@ -386,8 +539,7 @@ button {
   text-align: left;
 }
 
-.fourthBlock .boxWrapper1 div p:nth-last-child(2n),
-.fourthBlock .boxWrapper2 div p:nth-last-child(2n) {
+.fourthBlock .boxWrapper div p:nth-last-child(2n) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,55 +556,68 @@ button {
 }
 
 .sticker {
-  position: relative;
+  border: 4px solid red;
 }
 
-.sticker .special {
-  position: absolute;
-  right: 0;
-  margin-top: 15px;
+.sticker .boxSpecial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1;
+          flex: 0 1;
+  width: 100%;
+  border: 2px solid blue;
+}
+
+.sticker .boxSpecial span:first-child {
+  word-wrap: break-word;
+  margin: 0 auto 0 19%;
+  border: 1px solid blue;
+}
+
+.sticker .boxSpecial .special {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  border: 1px solid blueviolet;
+  margin: 0px 0 0 0;
   color: #fff;
   background: rgba(200, 159, 45, 0.8);
   padding: 0px 14px;
 }
 
-.sticker .boxSpecial2 {
-  border: 1px solid goldenrod;
-  border-bottom: 0;
-}
-
-.sticker .boxSpecial2,
 .sticker .boxSpecial3 {
-  padding: 5px 15px;
-}
-
-.sticker .boxSpecial3 {
-  border: 1px solid goldenrod;
   border-top: 0;
 }
 
-.boxWrapper1 div:nth-of-type(1) {
-  margin-bottom: 15px;
-}
-
-.boxWrapper2 div:nth-of-type(2) {
-  margin-top: -70px;
-}
-
 .fifthBlock {
-  position: relative;
+  width: 100%;
   height: 100vh;
   background-image: url("../img/fifthBlock_img/food.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .fifthBlock .square {
-  position: absolute;
   background: rgba(0, 0, 0, 0.6);
   width: 45%;
-  height: 450px;
-  margin: 7.5% 30%;
+  min-height: 400px;
+  margin: 0 auto;
   padding-top: 5.5%;
+  padding-left: 45px;
+  padding-right: 45px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border: 3px solid #0d1317;
 }
 
 .fifthBlock .square h1,
@@ -479,59 +644,159 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 30%;
-  margin-bottom: 4%;
+  margin: 20px auto;
+  max-width: 100%;
 }
 
 .sixthBlock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #fff;
-  padding: 102px 290px 0 215px;
+  padding: 5px 0 10px;
 }
 
 .sixthBlock .imgContainer {
+  background-color: rgba(211, 198, 132, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  min-height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
-.sixthBlock .imgContainer img:first-child {
-  margin-right: 30px;
-}
-
-.textBox {
-  margin-left: 12%;
-  width: 480px;
+.sixthBlock .imgContainer div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.sixthBlock .imgContainer div {
+  padding: 10px;
+}
+
+.sixthBlock .imgContainer div img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0px 0 0px 5px;
+}
+
+.sixthBlock .textBox {
+  background-color: rgba(211, 198, 132, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+}
+
+.sixthBlock .textBox .textWrapper_6 {
+  border-bottom: 3px solid #cc9900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  padding: 5px 0 0;
+}
+
+.sixthBlock .textBox .textWrapper_6 h1 {
+  text-align: center;
+  font-family: 'YesevaOne';
+  font-size: 36px;
+  color: #cc9900;
+  font-weight: bold;
+}
+
+.sixthBlock .textBox .textWrapper_6 img {
+  margin: 10px auto;
+}
+
+.sixthBlock .textBox .textWrapper_6 p {
+  color: #4c4c4c;
+  font-family: 'Lato';
+  font-size: 19px;
+  line-height: 1.5;
+  padding: 0 5px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.textBox h1 {
-  margin-bottom: 21px;
+.sixthBlock .textBox .formWrapper_6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-width: 82%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
 }
 
-.textBox img {
-  margin-bottom: 32px;
+.sixthBlock .textBox .formWrapper_6 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.textBox p {
-  color: black;
-}
-
-.textBox form {
+.sixthBlock .textBox .formWrapper_6 form label {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,52 +804,27 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  text-align: left;
-  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 
-.textBox form p {
-  color: gold;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.sixthBlock .textBox .formWrapper_6 form label span {
+  color: #c9a131;
 }
 
-.textBox form p:first-child {
-  margin-bottom: 10px;
-}
-
-.textBox form label input,
-.textBox form label select {
-  padding: 5px 0 5px 10px;
-  margin-top: 5px;
-}
-
-.textBox form label span {
-  line-height: 1.2;
-  margin-left: 60%;
-}
-
-.textBox form label input:focus {
+.sixthBlock .textBox .formWrapper_6 form label input {
   border: 1px solid #c9a131;
-  outline: none;
+  color: #b48f28;
 }
 
-.textBox form label select:focus {
-  border: 1px solid #c9a131;
-  outline: none;
-}
-
-.textBox form input:nth-child(1) {
-  margin-right: 30px;
-}
-
-.textBox form label:last-child {
-  margin-top: 2px;
-  margin-left: 30px;
-}
-
-.textBox form input:nth-child(3) {
+.sixthBlock .textBox .formWrapper_6 form label input input:nth-child(3) {
   margin-top: 34px;
   background: #c9a131;
   height: 39px;
@@ -606,11 +846,7 @@ button {
   padding-left: 73px;
 }
 
-.textBox form label input:last-child {
-  overflow: hidden;
-}
-
-#calendar {
+.sixthBlock .textBox .formWrapper_6 form label input #calendar {
   display: block;
   background-image: url(../img/sixthBlock-img/calendar.png);
   background-repeat: no-repeat;
@@ -619,112 +855,50 @@ button {
   cursor: pointer;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 11;
-  padding-top: 150px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+.sixthBlock .textBox .formWrapper_6 form label input:focus {
+  border: 1px solid #b4a44b;
+  outline: none;
+  color: #968529;
 }
 
-.modal .modal-content {
-  background-color: #fefefe;
-  margin: -5% auto 0;
-  border: 1px solid #888;
-  width: 60%;
-  position: relative;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation-name: animatetop;
-          animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
-}
-
-#myBtn {
-  background-color: rgba(192, 166, 37, 0.8);
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
-  border: 1px solid #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #080807;
-  border-radius: 20px;
-  color: #fff;
-  border: 1px solid #fff;
-}
-
-.modal-header {
-  padding: 30px 16px;
-  background-color: #b58200;
-  color: #fff;
-  font-size: 25px;
-}
-
-.modal-header .close {
-  color: #fff;
-  float: right;
-  font-size: 40px;
+.sixthBlock .textBox .formWrapper_6 #myBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  max-width: 100px;
+  max-height: 45px;
+  padding: 10px 30px;
+  margin-top: 10px;
+  max-width: 150px;
   font-weight: bold;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-}
-
-.modal-header .close:hover, .modal-header .close:focus {
-  color: #824e01;
-  text-decoration: none;
+  background-color: rgba(192, 166, 37, 0.8);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  outline: none;
+  border: 1px solid #fff;
   cursor: pointer;
 }
 
-#myModal .modal-body {
-  padding: 20px 16px;
-  font-size: 20px;
+.sixthBlock .textBox .formWrapper_6 #myBtn:hover {
+  background-color: #805f05;
+  border-right: 5px solid #2e2305;
+  border-left: 5px solid #2e2305;
+  border-radius: 20px;
 }
 
-#myModal .modal-body p {
-  color: black;
-}
-
-.modal-footer {
-  padding: 30px 16px;
-  background-color: #b58200;
-  color: #fff;
-  font-size: 25px;
-}
-
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
+.sixthBlock .formWrapper_6 form label:first-child,
+.sixthBlock .formWrapper_6 form label:nth-child(odd) {
+  padding-right: 3px;
+  border-right: 0px solid #cc9900;
 }
 
 /* ........................... FOOTER ........................*/
 footer {
-  margin-top: 50px;
   min-height: 300px;
   height: 100%;
   background: rgba(0, 0, 0, 0.93);
@@ -851,5 +1025,6 @@ div:nth-child(2) .first {
   outline: none;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
+  z-index: 5;
 }
 /*# sourceMappingURL=style.css.map */
