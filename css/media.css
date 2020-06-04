@@ -236,7 +236,6 @@
             /* padding: 0; */
             top: 8%;
             left: auto;
-            
         }
 
         .fourthBlock .boxWrapper div h1 {
@@ -244,7 +243,7 @@
         }
 
         .fifthBlock .square h1 {
-            color: rgb(205, 125, 50);
+            /* color: rgb(205, 125, 50); */
             font-size: 30px;
         }
 
@@ -428,7 +427,6 @@
         .firstBlock .menu {
             left: 37%;
         }
-        
     }
 
     @media (max-width: 547px) {
@@ -442,6 +440,11 @@
             color: black;
             margin-top: 19vh;
             margin-bottom: 0;
+        }
+
+        .fifthBlock {
+            padding-top: 15px;
+            padding-bottom: 0px;
         }
     }
 
@@ -460,10 +463,10 @@
            
         }
 
-        .thirdBlock .square {
+        /* .thirdBlock .square {
             top: 15%;
 
-        }
+        } */
 
         /* .thirdBlock .square h1 {
             color: blue;
@@ -473,9 +476,17 @@
 
         } */
 
-        /* .fifthBlock .square p {
+         /* .fifthBlock .square p {
             color: yellowgreen;
         } */
+
+        .fifthBlock  {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        
 
         .sixthBlock .textBox .textWrapper_6 h1 {
             font-size: 20px;
@@ -522,7 +533,11 @@
         } */
 
         .fifthBlock {
-            padding-top: 25px;
+            display: flex;
+            align-items: center;
+            /* padding-top: 50%; */
+            /* padding-top: 25px; */
+            padding-top: 0;
             padding-bottom: 0px;
         }
 
@@ -559,10 +574,10 @@
            
         }
 
-        .fifthBlock {
+        /* .fifthBlock {
             padding-top: 0px;
             padding-bottom: 0px;
-        }
+        } */
     }
 
     @media (max-width: 320px) {
@@ -582,13 +597,22 @@
             top: 12%;
         }
 
+        .fifthBlock {
+            padding: 0;
+        }
+
         .fifthBlock .square h1 {
             font-size: 25px;
+            padding: 0;
+            margin: 0;
         }
 
         .fifthBlock .square p {
-            font-size: 17px;
+            font-size: 16.9px;
             /* font-weight: normal; */
+            /* font-weight: normal; */
+            padding: 0;
+            margin: 0;
         }
     }
 

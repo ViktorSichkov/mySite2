@@ -596,9 +596,9 @@ header .btnContainer div a.sbtn:hover {
 }
 
 .fifthBlock {
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
-  background-image: url("../img/fifthBlock_img/food.jpg");
+  background: url("../img/fifthBlock_img/fire.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 50px;
@@ -629,6 +629,7 @@ header .btnContainer div a.sbtn:hover {
 .fifthBlock .square h1 {
   font-family: 'Yeseva One';
   font-size: 36px;
+  color: #cd7d32;
 }
 
 .fifthBlock .square p {
