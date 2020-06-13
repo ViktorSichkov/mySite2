@@ -493,6 +493,7 @@ header .btnContainer div a.sbtn:hover {
   background-color: rgba(211, 198, 132, 0.1);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 3px solid #cc9900;
 }
 
 .fourthBlock .boxWrapper {
@@ -507,11 +508,9 @@ header .btnContainer div a.sbtn:hover {
           flex: 1 1 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 2px solid blue;
 }
 
 .fourthBlock .boxWrapper div {
-  border: 1px solid blueviolet;
   width: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,12 +532,12 @@ header .btnContainer div a.sbtn:hover {
 
 .fourthBlock .boxWrapper div img {
   padding: 10px 0;
-  width: auto;
-  height: auto;
+  margin: 10px 0;
+  max-width: 300px;
+  width: 100%;
 }
 
 .fourthBlock .boxWrapper div p {
-  border: 2px solid green;
   padding-bottom: 5px;
   color: #4c4c4c;
   font-size: 16px;
@@ -563,6 +562,11 @@ header .btnContainer div a.sbtn:hover {
   margin-top: 10px;
 }
 
+.sticker,
+.mainDish {
+  margin-top: 20px;
+}
+
 .sticker .boxSpecial {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -575,7 +579,6 @@ header .btnContainer div a.sbtn:hover {
           flex: 1 1;
   max-height: 16%;
   width: 100%;
-  border: 4px solid red;
 }
 
 .sticker .boxSpecial span:first-child {
@@ -589,7 +592,6 @@ header .btnContainer div a.sbtn:hover {
       -ms-flex-pack: end;
           justify-content: flex-end;
   word-wrap: break-word;
-  border: 1px solid blue;
   padding-right: 5px;
 }
 
@@ -616,7 +618,6 @@ header .btnContainer div a.sbtn:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid blueviolet;
   margin: 0px 0 0 0;
   color: #fff;
   background: rgba(200, 159, 45, 0.8);
