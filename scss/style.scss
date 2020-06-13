@@ -163,13 +163,11 @@ header {
         display: flex;
         flex: 1 1;
         justify-content: space-between;
-        // max-width: 482px;
         max-width: 350px;
         min-height: 65px;
         height: 100%;
         margin: 7.5vh auto 0;
         box-sizing: border-box;
-        // border: 3px solid green;
 
         div {
             display: flex;
@@ -785,25 +783,27 @@ header {
             #myBtn {
                 display: flex;
                 align-self: center;
+                justify-content: center;
                 flex: 1 1;
-                max-width: 100px;
+                min-width: 150px;
                 max-height: 45px;
-                // width: 100%;
-                padding: 10px 30px;
+                padding: 15px 30px;
                 margin-top: 10px;
-                max-width: 150px;
                 font-weight: bold;
-                background-color: rgba(192, 166, 37, 0.8);
+                color: #fff;
+                background-color: rgba(122, 103, 6, 0.8);
                 transition: 0.3s linear;
                 outline: none;
                 @include border(#fff);
                 cursor: pointer;
+                border: 1px solid rgb(116, 93, 35);
 
                 &:hover {
-                    background-color: #805f05;
-                    border-right: 5px solid #2e2305;
-                    border-left: 5px solid #2e2305;
-                    border-radius: 20px;
+                    // border-radius: 20px;
+                    // border: 1px solid rgba(77, 66, 8, 0.8);
+                    // border-left: 10px solid rgba(77, 66, 8, 0.8);
+                    // border-right: 10px solid rgba(77, 66, 8, 0.8);
+                    background-color: rgba(105, 88, 1, 0.801);
                 }
             }
         }

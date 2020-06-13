@@ -661,6 +661,10 @@
            
         } */
 
+        .firstBlock .btnContainer {
+            max-width: 310px;
+        }
+
         .firstBlock .btnContainer .btnWrapper1 {
             margin-right: 5px;
         }
