@@ -363,336 +363,341 @@
     }
 }
 
-@media (max-width: 700px) {
-
-    /* .headerBottom h1 {
-            color: deeppink;
-        } */
-
-    .firstBlock .menu {
-        left: 39.5%;
-    }
-
-    /* .secondBlock .leftSide h2 {
-            color: blue;
-        } */
-
+@media (max-width: 705px) {
     .fourthBlock .boxWrapper div .boxSpecial {
         max-height: 18%;
     }
 
-    .sixthBlock .textBox .textWrapper_6 p {
-        color: #4c4c4c;
-        font-family: 'Lato';
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 1px;
-        padding: 0 5px;
-        /* margin: 0 auto; */
-    }
+    @media (max-width: 700px) {
+        /* .headerBottom h1 {
+            color: deeppink;
+        } */
 
-    .sixthBlock .imgContainer div {
-        min-height: 50%;
-    }
+        .firstBlock .menu {
+            left: 39.5%;
+        }
 
-    /* .sixthBlock .textBox .textWrapper_6 p {
+        /* .secondBlock .leftSide h2 {
+            color: blue;
+        } */
+
+        /* .fourthBlock .boxWrapper div .boxSpecial {
+        max-height: 18%;
+    } */
+
+        .sixthBlock .textBox .textWrapper_6 p {
+            color: #4c4c4c;
+            font-family: 'Lato';
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            padding: 0 5px;
+            /* margin: 0 auto; */
+        }
+
+        .sixthBlock .imgContainer div {
+            min-height: 50%;
+        }
+
+        /* .sixthBlock .textBox .textWrapper_6 p {
             color: blueviolet;
         } */
 
-}
-
-@media (max-width: 655px) {
-    .firstBlock .headerBottom h1 {
-        color: black;
-        /* margin-bottom: 15.2vh; */
-        font-size: 57px;
     }
 
-    /* .secondBlock .leftSide h2 {
+    @media (max-width: 655px) {
+        .firstBlock .headerBottom h1 {
+            color: black;
+            /* margin-bottom: 15.2vh; */
+            font-size: 57px;
+        }
+
+        /* .secondBlock .leftSide h2 {
             color: blue;
         } */
-}
+    }
 
-@media (max-width: 650px) {
-    /* .firstBlock .headerBottom h1 {
+    @media (max-width: 650px) {
+        /* .firstBlock .headerBottom h1 {
             color: aqua;
             margin-bottom: 15.2vh;
         } */
 
-    .menu {
-        left: 38.5%;
-    }
+        .menu {
+            left: 38.5%;
+        }
 
-    .sixthBlock .imgContainer div {
-        padding: 2.5px;
-        /* margin: 0; */
-    }
+        .sixthBlock .imgContainer div {
+            padding: 2.5px;
+            /* margin: 0; */
+        }
 
-    /* .sixthBlock .textBox .textWrapper_6 p {
+        /* .sixthBlock .textBox .textWrapper_6 p {
            color: blue;
         } */
-}
-
-@media (max-width: 624px) {
-    .firstBlock .headerBottom h1 {
-        /* color: greenyellow; */
-        font-size: 55px;
-        margin-bottom: 10vh;
     }
 
-    /* .secondBlock .leftSide h2 {
+    @media (max-width: 624px) {
+        .firstBlock .headerBottom h1 {
+            /* color: greenyellow; */
+            font-size: 55px;
+            margin-bottom: 10vh;
+        }
+
+        /* .secondBlock .leftSide h2 {
             color: blueviolet;
         } */
 
-    .secondBlock .leftSide img {
-        flex: 0 2 auto;
-    }
+        .secondBlock .leftSide img {
+            flex: 0 2 auto;
+        }
 
-    /* .fifthBlock .square p {
+        /* .fifthBlock .square p {
         color: yellowgreen;
     } */
 
-}
+    }
 
-@media (max-width: 550px) {
-    /* .firstBlock .headerBottom h1 {
+    @media (max-width: 550px) {
+        /* .firstBlock .headerBottom h1 {
             color: blueviolet;
         } */
 
-    .firstBlock .menu {
-        left: 37%;
-    }
-}
-
-@media (max-width: 547px) {
-    .fourthBlock .boxWrapper div .boxSpecial {
-        max-height: 23%;
+        .firstBlock .menu {
+            left: 37%;
+        }
     }
 
-    /* .firstBlock .headerBottom h1 {
+    @media (max-width: 547px) {
+        .fourthBlock .boxWrapper div .boxSpecial {
+            max-height: 23%;
+        }
+
+        /* .firstBlock .headerBottom h1 {
             color: rgb(255, 0, 43);
         } */
-    /* .fifthBlock .square p {
+        /* .fifthBlock .square p {
         color: yellowgreen;
     } */
-}
-
-@media (max-width: 540px) {
-    .fifthBlock .square p {
-        color: yellowgreen;
     }
 
-    /* .fourthBlock .boxWrapper div .boxSpecial {
+    @media (max-width: 540px) {
+        .fifthBlock .square p {
+            color: yellowgreen;
+        }
+
+        /* .fourthBlock .boxWrapper div .boxSpecial {
         max-height: 23%;
     } */
 
-}
-
-@media (max-width: 521px) {
-    .firstBlock .headerBottom h1 {
-        color: black;
-        margin-top: 19vh;
-        margin-bottom: 0;
     }
 
-    .fifthBlock {
-        padding-top: 15px;
-        padding-bottom: 0px;
-    }
-}
+    @media (max-width: 521px) {
+        .firstBlock .headerBottom h1 {
+            color: black;
+            margin-top: 19vh;
+            margin-bottom: 0;
+        }
 
-@media (max-width: 414px) {
-    /* .sixthBlock .textBox .textWrapper_6 img {
+        .fifthBlock {
+            padding-top: 15px;
+            padding-bottom: 0px;
+        }
+    }
+
+    @media (max-width: 414px) {
+        /* .sixthBlock .textBox .textWrapper_6 img {
             width: 100%;
         } */
 
-    .firstBlock .headerBottom h1 {
-        font-size: 47px;
-        /* color: red; */
-    }
+        .firstBlock .headerBottom h1 {
+            font-size: 47px;
+            /* color: red; */
+        }
 
-    .firstBlock .btnContainer {
-        margin-top: 15vh;
+        .firstBlock .btnContainer {
+            margin-top: 15vh;
 
-    }
+        }
 
-    /* .thirdBlock .square {
+        /* .thirdBlock .square {
             top: 15%;
 
         } */
 
-    /* .thirdBlock .square h1 {
+        /* .thirdBlock .square h1 {
             color: blue;
         } */
 
-    /* .thirdBlock .square {
+        /* .thirdBlock .square {
 
         } */
 
-    /* .fifthBlock .square p {
+        /* .fifthBlock .square p {
             color: yellowgreen;
         } */
 
-    .fourthBlock .boxWrapper div h1 {
-        color: red;
+        .fourthBlock .boxWrapper div h1 {
+            color: red;
+        }
+
+        .fourthBlock .boxWrapper div p .special span {
+            transform: rotate(90deg);
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial {
+            max-height: 20%;
+        }
+
+        .fifthBlock {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .sixthBlock .textBox .textWrapper_6 h1 {
+            font-size: 20px;
+        }
+
+        .sixthBlock .textBox .textWrapper_6 p {
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: normal;
+            padding: 0 5px;
+            margin: 0 auto;
+            width: 100%;
+            /* text-align: center; */
+        }
+
+        .sixthBlock .imgContainer div {
+            padding: 2.5px;
+            margin: 0;
+        }
     }
 
-    .fourthBlock .boxWrapper div p .special span {
-        transform: rotate(90deg);
+    @media (max-width: 411px) {
+        .firstBlock .headerBottom h1 {
+            font-size: 47px;
+            /* color: greenyellow; */
+        }
+
+        .firstBlock .btnContainer {
+            margin-top: 130px;
+            /* margin-top: 20vh; */
+
+        }
     }
 
-    .fourthBlock .boxWrapper div .boxSpecial {
-        max-height: 20%;
-    }
+    @media (max-width: 375px) {
+        .firstBlock .btnContainer {
+            /* margin-top: 65px;   */
+            margin-top: 80px;
 
-    .fifthBlock {
-        display: flex;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-    }
+        }
 
-
-    .sixthBlock .textBox .textWrapper_6 h1 {
-        font-size: 20px;
-    }
-
-    .sixthBlock .textBox .textWrapper_6 p {
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: normal;
-        padding: 0 5px;
-        margin: 0 auto;
-        width: 100%;
-        /* text-align: center; */
-    }
-
-    .sixthBlock .imgContainer div {
-        padding: 2.5px;
-        margin: 0;
-    }
-}
-
-@media (max-width: 411px) {
-    .firstBlock .headerBottom h1 {
-        font-size: 47px;
-        /* color: greenyellow; */
-    }
-
-    .firstBlock .btnContainer {
-        margin-top: 130px;
-        /* margin-top: 20vh; */
-
-    }
-}
-
-@media (max-width: 375px) {
-    .firstBlock .btnContainer {
-        /* margin-top: 65px;   */
-        margin-top: 80px;
-
-    }
-
-    /* .firstBlock .btnContainer {
+        /* .firstBlock .btnContainer {
             margin-top: 23vh;
            
         } */
 
-    .fifthBlock {
-        display: flex;
-        align-items: center;
-        /* padding-top: 50%; */
-        /* padding-top: 25px; */
-        padding-top: 0;
-        padding-bottom: 0px;
-    }
+        .fifthBlock {
+            display: flex;
+            align-items: center;
+            /* padding-top: 50%; */
+            /* padding-top: 25px; */
+            padding-top: 0;
+            padding-bottom: 0px;
+        }
 
-    .fifthBlock .square p {
-        font-size: 18px;
-    }
+        .fifthBlock .square p {
+            font-size: 18px;
+        }
 
-    .sixthBlock .textBox .textWrapper_6 img {
-        width: 100%;
-    }
+        .sixthBlock .textBox .textWrapper_6 img {
+            width: 100%;
+        }
 
-    .sixthBlock .textBox .textWrapper_6 h1 {
-        font-size: 20px;
-    }
+        .sixthBlock .textBox .textWrapper_6 h1 {
+            font-size: 20px;
+        }
 
-    .sixthBlock .textBox .textWrapper_6 p {
-        font-size: 14px;
-        line-height: 1.5;
-        letter-spacing: normal;
-        padding: 0 5px;
-        margin: 0;
-        /* width: 100%; */
+        .sixthBlock .textBox .textWrapper_6 p {
+            font-size: 14px;
+            line-height: 1.5;
+            letter-spacing: normal;
+            padding: 0 5px;
+            margin: 0;
+            /* width: 100%; */
 
-        /* text-align: center; */
-    }
+            /* text-align: center; */
+        }
 
-    /* .sixthBlock .imgContainer div {
+        /* .sixthBlock .imgContainer div {
             padding: 0;
         } */
-}
-
-@media (max-width: 360px) {
-    .firstBlock .btnContainer {
-        margin-top: 50px;
-
     }
 
-    .fourthBlock .boxWrapper div .boxSpecial {
-        max-height: 24%;
-    }
+    @media (max-width: 360px) {
+        .firstBlock .btnContainer {
+            margin-top: 50px;
 
-    /* .fifthBlock {
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial {
+            max-height: 24%;
+        }
+
+        /* .fifthBlock {
             padding-top: 0px;
             padding-bottom: 0px;
         } */
-}
+    }
 
-@media (max-width: 320px) {
-    /* .firstBlock .btnContainer {
+    @media (max-width: 320px) {
+        /* .firstBlock .btnContainer {
             margin-top: 40px;
            
         } */
 
-    .firstBlock .btnContainer .btnWrapper1 {
-        margin-right: 5px;
-    }
+        .firstBlock .btnContainer .btnWrapper1 {
+            margin-right: 5px;
+        }
 
-    .firstBlock .btnContainer .btnWrapper2 {
-        margin-left: 5px;
-    }
+        .firstBlock .btnContainer .btnWrapper2 {
+            margin-left: 5px;
+        }
 
-    .thirdBlock .square {
-        top: 12%;
-    }
+        .thirdBlock .square {
+            top: 12%;
+        }
 
-    .fourthBlock .boxWrapper div p span> {
-        font-size: 16px;
-        color: blueviolet;
-    }
+        .fourthBlock .boxWrapper div p span> {
+            font-size: 16px;
+            color: blueviolet;
+        }
 
-    .fourthBlock .boxWrapper div .boxSpecial {
-        max-height: 23%;
-    }
+        .fourthBlock .boxWrapper div .boxSpecial {
+            max-height: 23%;
+        }
 
-    .fifthBlock {
-        padding: 0;
-    }
+        .fifthBlock {
+            padding: 0;
+        }
 
-    .fifthBlock .square h1 {
-        font-size: 25px;
-        padding: 0;
-        margin: 0;
-    }
+        .fifthBlock .square h1 {
+            font-size: 25px;
+            padding: 0;
+            margin: 0;
+        }
 
-    .fifthBlock .square p {
-        font-size: 16.9px;
-        /* font-weight: normal; */
-        /* font-weight: normal; */
-        padding: 0;
-        margin: 0;
+        .fifthBlock .square p {
+            font-size: 16.9px;
+            /* font-weight: normal; */
+            /* font-weight: normal; */
+            padding: 0;
+            margin: 0;
+        }
     }
 }

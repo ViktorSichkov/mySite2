@@ -165,10 +165,11 @@ header {
         justify-content: space-between;
         // max-width: 482px;
         max-width: 350px;
-        min-height: 75px;
+        min-height: 65px;
         height: 100%;
-        margin: 5vh auto 0;
-        border: 3px solid green;
+        margin: 7.5vh auto 0;
+        box-sizing: border-box;
+        // border: 3px solid green;
 
         div {
             display: flex;
@@ -188,11 +189,13 @@ header {
                 text-align: center;
                 padding: 22px 0 0;
                 transition: .3s linear;
+                color: #fff;
             }
 
             a.fbtn {
                 background-color: rgba(38, 37, 28, 0.7);
                 @include border(black);
+                transition: .3s linear;
 
                 &:hover {
                     color: greenyellow;
@@ -203,6 +206,8 @@ header {
             a.sbtn {
                 background-color: rgba(185, 169, 92, 0.8);
                 @include border(#fff);
+                transition: .3s linear;
+
 
                 &:hover {
                     background: rgba(38, 37, 28, 0.7);

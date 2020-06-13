@@ -184,10 +184,11 @@ header .btnContainer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 350px;
-  min-height: 75px;
+  min-height: 65px;
   height: 100%;
-  margin: 5vh auto 0;
-  border: 3px solid green;
+  margin: 7.5vh auto 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 header .btnContainer div {
@@ -214,11 +215,14 @@ header .btnContainer div a {
   padding: 22px 0 0;
   -webkit-transition: .3s linear;
   transition: .3s linear;
+  color: #fff;
 }
 
 header .btnContainer div a.fbtn {
   background-color: rgba(38, 37, 28, 0.7);
   border: 1px solid black;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 header .btnContainer div a.fbtn:hover {
@@ -229,6 +233,8 @@ header .btnContainer div a.fbtn:hover {
 header .btnContainer div a.sbtn {
   background-color: rgba(185, 169, 92, 0.8);
   border: 1px solid #fff;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
 }
 
 header .btnContainer div a.sbtn:hover {
