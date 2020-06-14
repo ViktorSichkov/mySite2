@@ -46,9 +46,9 @@
         padding-right: 0;
     }
 
-    .fourthBlock .boxWrapper div h1 {
+    /* .fourthBlock .boxWrapper div h1 {
         color: blueviolet;
-    }
+    } */
 
     /* .fourthBlock .boxWrapper .sticker .boxSpecial span:first-child {
         padding-right: 0px;
@@ -183,7 +183,7 @@
     .firstBlock .headerBottom h1 {
         font-size: 65px;
         /* margin-bottom: 12.11vh; */
-        color: yellow;
+        /* color: yellow; */
     }
 
     footer {
@@ -212,7 +212,7 @@
     }
 
     .firstBlock .headerBottom h1 {
-        color: blue;
+        /* color: blue; */
         /* font-size: 73px; */
         font-size: 60px;
         /* margin-bottom: 13.93vh; */
@@ -242,9 +242,9 @@
         left: auto;
     }
 
-    .fourthBlock .boxWrapper div h1 {
+    /* .fourthBlock .boxWrapper div h1 {
         color: rgb(15, 131, 15);
-    }
+    } */
 
     .fourthBlock .boxWrapper div p span> {
         font-size: 19px;
@@ -481,16 +481,11 @@
     } */
     }
 
-    @media (max-width: 540px) {
+    /* @media (max-width: 540px) {
         .fifthBlock .square p {
             color: yellowgreen;
         }
-
-        /* .fourthBlock .boxWrapper div .boxSpecial {
-        max-height: 23%;
     } */
-
-    }
 
     @media (max-width: 521px) {
         .firstBlock .headerBottom h1 {
@@ -538,7 +533,26 @@
         } */
 
         .fourthBlock .boxWrapper div h1 {
-            color: red;
+            /* color: red; */
+            font-size: 22px;
+        }
+
+        .fourthBlock .boxWrapper div p>span {
+            /* color: rgb(83, 56, 107); */
+            font-size: 15px;
+            /* line-height: 1rem; */
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial .inner {
+            font-size: 16px;
+            /* line-height: 1.5rem; */
+            /* font-weight: normal; */
+            /* color: red; */
+        }
+
+        .fourthBlock .boxWrapper div p .special {
+            flex-shrink: 8;
+
         }
 
         .fourthBlock .boxWrapper div p .special span {
@@ -546,7 +560,8 @@
         }
 
         .fourthBlock .boxWrapper div .boxSpecial {
-            max-height: 20%;
+            /* max-height: 20%; */
+            max-height: 15.6%;
         }
 
         .fifthBlock {
@@ -555,7 +570,6 @@
             margin: 0;
             padding: 0;
         }
-
 
         .sixthBlock .textBox .textWrapper_6 h1 {
             font-size: 20px;
@@ -588,6 +602,15 @@
             /* margin-top: 20vh; */
 
         }
+
+        .fourthBlock .boxWrapper div .boxSpecial .special {
+            flex-shrink: 9;
+            margin-right: 1.1px;
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial .special span {
+            font-size: 14px;
+        }
     }
 
     @media (max-width: 375px) {
@@ -601,6 +624,44 @@
             margin-top: 23vh;
            
         } */
+
+        .fourthBlock .boxWrapper div.sticker,
+        .fourthBlock .boxWrapper div.mainDish {
+            margin-top: 5px;
+        }
+
+        .fourthBlock .boxWrapper div p {
+            /* font-size: 15px; */
+            font-size: 14.6px;
+
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial {
+            max-height: 15.41%;
+        }
+
+        .fourthBlock .boxWrapper div p>span {
+            font-size: 14px;
+            font-weight: bold;
+            /* color: blueviolet; */
+        }
+
+        .fourthBlock .boxWrapper div.sticker .inner {
+            font-weight: normal;
+            font-size: 14.6px;
+            /* line-height: 1.31em;*/
+            /* color: red; */
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial .special {
+            flex-shrink: 9;
+            /* margin-right: 1.1px; */
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial .special span {
+            font-size: 12px;
+            font-weight: normal;
+        }
 
         .fifthBlock {
             display: flex;
@@ -646,7 +707,16 @@
         }
 
         .fourthBlock .boxWrapper div .boxSpecial {
-            max-height: 24%;
+            max-height: 15.5%;
+        }
+
+        .fourthBlock .boxWrapper div p>span {
+            /* color: red; */
+            font-size: 13px;
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial .inner {
+            font-size: 14px;
         }
 
         /* .fifthBlock {
@@ -677,13 +747,31 @@
             top: 12%;
         }
 
-        .fourthBlock .boxWrapper div p span> {
-            font-size: 16px;
-            color: blueviolet;
+        .fourthBlock .boxWrapper div .boxSpecial {
+            max-height: 15%;
         }
 
-        .fourthBlock .boxWrapper div .boxSpecial {
-            max-height: 23%;
+        .fourthBlock .boxWrapper div p {
+            font-size: 12.5px;
+
+        }
+
+        .fourthBlock .boxWrapper div p>span {
+            /* color: red; */
+            font-size: 12px;
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial .inner {
+            font-size: 12.5px;
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial .special {
+            flex-shrink: 10;
+            margin-right: 2px;
+        }
+
+        .fourthBlock .boxWrapper div .boxSpecial .special span {
+            font-size: 10.7px;
         }
 
         .fifthBlock {
