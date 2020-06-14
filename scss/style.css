@@ -27,7 +27,11 @@ header {
   max-width: 1600px;
   width: 100%;
   min-height: 100vh;
-  background-image: url(../img/bg1.jpg);
+  background-image: url(../img/vine_7.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 40%;
+  /* vine_7.jpg */
+  /* vine_14.jpg */
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
