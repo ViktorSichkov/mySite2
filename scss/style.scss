@@ -28,15 +28,11 @@ header {
     max-width: 1600px;
     width: 100%;
     min-height: 100vh;
-    background-image: url(../img/vine_7.jpg);
-    background-repeat: no-repeat;
-    background-position-y: 40%;
-    /* vine_7.jpg */
-    // background-position-y: 35%;
-    /* vine_14.jpg */
+    // background: url(../img/vine_3.jpg) 0% 35% no-repeat;
+    // background: url(../img/vine_2.jpg) 0% 0% no-repeat;
+    background: url(../img/naturmort.jpg) 0% 0% no-repeat;
     background-size: cover;
     box-sizing: border-box;
-
 
     .headerTop {
         @include flexible;
