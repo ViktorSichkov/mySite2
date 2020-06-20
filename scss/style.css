@@ -27,7 +27,7 @@ header {
   max-width: 1600px;
   width: 100%;
   min-height: 100vh;
-  background: url(../img/naturmort.jpg) 0% 0% no-repeat;
+  background: url(../img/vine_3.jpg) 0% 35% no-repeat;
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -123,35 +123,105 @@ header .headerBottom h1 {
   color: #fff;
 }
 
-header nav {
-  margin-right: 3%;
-  z-index: 99;
-}
-
-header nav ul {
+header .menu_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 27px;
-  z-index: 99;
+  margin-right: 3%;
 }
 
-header nav ul a {
+header .menu_list a {
   color: white;
   font-size: 24px;
   line-height: 1.5;
   text-align: center;
   display: block;
+  text-align: center;
   text-transform: capitalize;
   -webkit-transition: all linear .3s;
   transition: all linear .3s;
   padding: 0 25px 0 0;
 }
 
-header nav ul a:hover {
-  -webkit-transform: scale(1.06);
-          transform: scale(1.06);
+header .menu_list a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   text-decoration: underline;
+}
+
+header .menu_list ul li a:hover {
+  text-decoration: none;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  padding: 3px 0 2px 5px;
+}
+
+header .menu_list .sub-menu_list li a {
+  border: 1px solid rgba(0, 0, 0, 0.671);
+  border-bottom: 0px solid black;
+}
+
+header .menu_list .sub-menu_list li:last-child a {
+  border-bottom: 1px solid black;
+}
+
+header .menu_list li:hover > ul {
+  display: block;
+}
+
+header .menu_list li {
+  position: relative;
+}
+
+header .sub-menu_list {
+  display: none;
+  position: absolute;
+  width: 190px;
+}
+
+header .sub-menu_list a {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  background-color: rgba(80, 72, 5, 0.7);
+}
+
+header .sub-menu_list a:hover {
+  padding: 5px 0px 5px 10px;
+  background-color: rgba(8, 6, 2, 0.75);
+}
+
+header .sub-sub-menu_list {
+  display: none;
+  width: 190px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin: 0;
+  padding: 0 0 0 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .sub-sub-menu_list li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .sub-sub-menu_list li a {
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 header nav a.pad {

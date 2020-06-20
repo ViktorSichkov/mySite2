@@ -28,11 +28,12 @@ header {
     max-width: 1600px;
     width: 100%;
     min-height: 100vh;
-    // background: url(../img/vine_3.jpg) 0% 35% no-repeat;
+    background: url(../img/vine_3.jpg) 0% 35% no-repeat;
     // background: url(../img/vine_2.jpg) 0% 0% no-repeat;
-    background: url(../img/naturmort.jpg) 0% 0% no-repeat;
+    // background: url(../img/naturmort.jpg) 0% 0% no-repeat;
     background-size: cover;
     box-sizing: border-box;
+    // z-index: 2;
 
     .headerTop {
         @include flexible;
@@ -114,30 +115,103 @@ header {
         }
     }
 
-    nav {
+    // .menu ul {
+    //     display: flex;
+    // }
+
+    .menu_list {
+        display: flex;
+        margin-top: 27px;
         margin-right: 3%;
-        z-index: 99;
 
-        ul {
-            display: flex;
-            margin-top: 27px;
-            z-index: 99;
+        a {
+            color: hsl(0, 0%, 100%);
+            // color: rgb(26, 18, 0);
+            @include font(24px, 1.5);
+            display: block;
+            text-align: center;
+            text-transform: capitalize;
+            transition: all linear .3s;
+            @include pad (0 25px 0 0);
 
-            a {
-                color: hsl(0, 0%, 100%);
-                // color: rgb(26, 18, 0);
-                @include font(24px, 1.5);
-                display: block;
-                text-transform: capitalize;
-                transition: all linear .3s;
-                @include pad (0 25px 0 0);
-
-                &:hover {
-                    transform: scale(1.06);
-                    text-decoration: underline;
-                }
+            &:hover {
+                transform: scale(1.05);
+                text-decoration: underline;
             }
         }
+
+        ul li a:hover {
+            text-decoration: none;
+            transform: scale(1);
+            padding: 3px 0 2px 5px;
+        }
+
+        .sub-menu_list li a {
+            border: 1px solid rgba(0, 0, 0, 0.671);
+            border-bottom: 0px solid black;
+        }
+
+        .sub-menu_list li:last-child a {
+            border-bottom: 1px solid black;
+        }
+    }
+
+    .menu_list li:hover>ul {
+        display: block;
+    }
+
+    .menu_list li {
+        position: relative;
+    }
+
+    .sub-menu_list {
+        display: none;
+        position: absolute;
+        width: 190px;
+
+        // li {
+        //     background-color: rgba(218, 165, 32, 0.623);
+        // }
+
+        a {
+            margin: 0;
+            padding: 0;
+            // padding: 5px;
+            // text-align: left;
+            box-sizing: border-box;
+            transition: 0.3s linear;
+            // background-color: rgba(151, 137, 16, 0.7);
+            background-color: rgba(80, 72, 5, 0.7);
+
+            &:hover {
+                padding: 5px 0px 5px 10px;
+                // background-color: rgba(29, 22, 5, 0.75);
+                background-color: rgba(8, 6, 2, 0.75);
+            }
+        }
+    }
+
+    .sub-sub-menu_list {
+        display: none;
+        width: 190px;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        margin: 0;
+        padding: 0 0 0 5px;
+        box-sizing: border-box;
+
+        li {
+            box-sizing: border-box;
+        }
+    }
+
+    .sub-sub-menu_list li a {
+        display: block;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
     }
 
     nav {
@@ -159,6 +233,35 @@ header {
                 outline: none;
             }
         }
+    }
+
+    @media (max-width: 992px) {
+        .menu {
+            // display: none;
+            flex-direction: column;
+            position: fixed;
+            top: 15vh;
+            left: 43.5%;
+            z-index: 12;
+        }
+
+        .sub-menu_list {
+            position: static;
+            top: 0;
+            left: 0;
+        }
+
+        .sub-sub-menu_list {
+            position: static;
+            top: 0;
+            left: 0;
+            padding: 0;
+        }
+
+        .sub-sub-menu_list li a {
+            display: block;
+        }
+
     }
 
     .btnContainer {

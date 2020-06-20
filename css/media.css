@@ -71,26 +71,55 @@
     /*.................................. Menu disapires ........................................ */
 
     .menu {
-        display: none;
+        /* display: none; */
         flex-direction: column;
         position: fixed;
-        top: 40px;
+        /* top: 40px; */
+        top: 15vh;
         left: 43.5%;
         z-index: 12;
-        margin-top: 60px;
+    }
+
+    /* .menu .menu_list li.pad {
+        flex-direction: row;
+    } */
+
+    .menu_list {
+        flex-direction: column;
+    }
+
+    /* .menu_list li:nth-child(-n+3) {
+        flex-direction: row;
+    } */
+
+    .menu .sub-menu_list {
+        position: static;
+        top: 0;
+        left: 0;
+    }
+
+    .sub-sub-menu_list {
+        position: static;
+        top: 0;
+        left: 0;
+        padding: 0;
+    }
+
+    .sub-sub-menu_list li a {
+        display: block;
     }
 
     /*................ // Menu disapires ......................... */
 
-    .menu a {
+    /* .menu a {
         padding: 10px 0 0 0;
         font-size: 27px;
         z-index: 12;
-    }
+    } */
 
-    .menu a.pad {
+    /* .menu a.pad {
         padding: 10px 10px 0 13px;
-    }
+    } */
 
     .headerBottom h1 {
         margin-top: 23vh;
