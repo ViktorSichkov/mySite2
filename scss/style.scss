@@ -235,34 +235,33 @@ header {
         }
     }
 
-    @media (max-width: 992px) {
-        .menu {
-            // display: none;
-            flex-direction: column;
-            position: fixed;
-            top: 15vh;
-            left: 43.5%;
-            z-index: 12;
-        }
+    // @media (max-width: 992px) {
+    //     .menu {
+    //         flex-direction: column;
+    //         position: fixed;
+    //         top: 15vh;
+    //         left: 43.5%;
+    //         z-index: 12;
+    //     }
 
-        .sub-menu_list {
-            position: static;
-            top: 0;
-            left: 0;
-        }
+    //     .sub-menu_list {
+    //         position: static;
+    //         top: 0;
+    //         left: 0;
+    //     }
 
-        .sub-sub-menu_list {
-            position: static;
-            top: 0;
-            left: 0;
-            padding: 0;
-        }
+    //     .sub-sub-menu_list {
+    //         position: static;
+    //         top: 0;
+    //         left: 0;
+    //         padding: 0;
+    //     }
 
-        .sub-sub-menu_list li a {
-            display: block;
-        }
+    //     .sub-sub-menu_list li a {
+    //         display: block;
+    //     }
 
-    }
+    // }
 
     .btnContainer {
         display: flex;

@@ -76,7 +76,8 @@
         position: fixed;
         /* top: 40px; */
         top: 15vh;
-        left: 43.5%;
+        /* left: 43.5%; */
+        left: 46.2%;
         z-index: 12;
     }
 
@@ -92,10 +93,20 @@
         flex-direction: row;
     } */
 
+    .menu_list li:hover .menu .sub-menu_list {
+        display: block;
+    }
+
     .menu .sub-menu_list {
+        /* display: block; */
         position: static;
         top: 0;
         left: 0;
+        margin: 0;
+        /* position: absolute;
+        top: 0;
+        left: 100%;
+        margin: 0; */
     }
 
     .sub-sub-menu_list {
