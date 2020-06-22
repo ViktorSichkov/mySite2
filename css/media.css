@@ -475,12 +475,12 @@
 
         .firstBlock .menu {
             /* left: 41%; */
-            left: 42vw;
+            left: 41.5vw;
         }
 
-        .firstBlock .headerBottom h1 {
+        /* .firstBlock .headerBottom h1 {
             color: blue;
-        }
+        } */
 
         .firstBlock .btnContainer {
             margin-top: 15vh;
@@ -564,9 +564,9 @@
             margin-top: 80px;
         }
 
-        .firstBlock .menu {
+        /* .firstBlock .menu {
             left: 41.5vw;
-        }
+        } */
 
         .fourthBlock .boxWrapper div.sticker,
         .fourthBlock .boxWrapper div.mainDish {
