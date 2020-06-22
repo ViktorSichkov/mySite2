@@ -46,6 +46,20 @@
         justify-content: space-between;
     }
 
+    .firstBlock .headerTop .menuCover {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0vh;
+        background-color: rgba(0, 0, 0, 0.658);
+        transition: 0.3s linear;
+    }
+
+    .firstBlock .headerTop .menuCover.active {
+        height: 100vh;
+    }
+
     .firstBlock .headerBottom h1 {
         font-size: 70px;
     }
@@ -57,7 +71,21 @@
         z-index: 12;
         position: fixed;
         top: 38px;
-        left: 50%;
+        /* left: 50%; */
+        left: 50vw;
+        /* border: 1px solid red; */
+    }
+
+    #burger .firstLine.active {
+        transform: rotate(45deg) translate(13px, 10px);
+    }
+
+    #burger .secondLine.active {
+        display: none;
+    }
+
+    #burger .thirdLine.active {
+        transform: rotate(-45deg) translate(9px, -5px);
     }
 
     /*............................. //  Burger menu apires ...................................... */
@@ -72,12 +100,12 @@
 
     .menu {
         /* display: none; */
-        flex-direction: column;
         position: fixed;
-        /* top: 40px; */
         top: 15vh;
         /* left: 43.5%; */
-        left: 46.2%;
+        /* left: 46.2%; */
+        /* left: 50%; */
+        left: 46vw;
         z-index: 12;
     }
 
@@ -89,16 +117,35 @@
         flex-direction: column;
     }
 
+    /* .menu_list li:nth-last-child(-n+3) {
+        display: inline-block;
+        color: blue;
+        display: flex;
+        flex-direction: row;
+        align-self: right;
+        justify-self: center;
+        background-color: green;
+        border: 1px solid black;
+
+    } */
+
+
     /* .menu_list li:nth-child(-n+3) {
         flex-direction: row;
     } */
 
-    .menu_list li:hover .menu .sub-menu_list {
+    .menu_list li:hover .menu .sub-menu_list li {
         display: block;
     }
 
+    /* .menu_list li:nth-last-child(-n+3) {
+        flex-direction: row;
+    } */
+
+
     .menu .sub-menu_list {
         /* display: block; */
+        /* position: static; */
         position: static;
         top: 0;
         left: 0;
@@ -177,9 +224,9 @@
         position: relative;
     }
 
-    .firstBlock .menu {
+    /* .firstBlock .menu {
         left: 42%;
-    }
+    } */
 
     .firstBlock a.fa {
         transform: translateX(6px);
@@ -210,9 +257,9 @@
 }
 
 @media (max-width: 768px) {
-    .firstBlock .menu {
+    /* .firstBlock .menu {
         left: 41%;
-    }
+    } */
 
     .firstBlock .headerBottom h1 {
         font-size: 60px;
@@ -329,15 +376,30 @@
     }
 }
 
+@media (max-width: 725px) {
+    .firstBlock .menu {
+        /* left: 41%; */
+        left: 44.5vw;
+    }
+
+    .firstBlock .headerBottom h1 {
+        color: blue;
+    }
+}
+
 @media (max-width: 705px) {
     .fourthBlock .boxWrapper div .boxSpecial {
         max-height: 18%;
     }
 
     @media (max-width: 700px) {
-        .firstBlock .menu {
+        /* .firstBlock .menu {
             left: 39.5%;
-        }
+        } */
+
+        /* .firstBlock .headerBottom h1 {
+            color: blue;
+        } */
 
         .sixthBlock .textBox .textWrapper_6 p {
             color: #4c4c4c;
@@ -360,10 +422,6 @@
     }
 
     @media (max-width: 650px) {
-        .menu {
-            left: 38.5%;
-        }
-
         .sixthBlock .imgContainer div {
             padding: 2.5px;
         }
@@ -383,8 +441,12 @@
 
     @media (max-width: 550px) {
         .firstBlock .menu {
-            left: 37%;
+            left: 43vw;
         }
+
+        /* .firstBlock .headerBottom h1 {
+            color: red;
+        } */
     }
 
     @media (max-width: 547px) {
@@ -409,6 +471,15 @@
         .firstBlock .headerBottom h1 {
             font-size: 47px;
             /* color: red; */
+        }
+
+        .firstBlock .menu {
+            /* left: 41%; */
+            left: 42vw;
+        }
+
+        .firstBlock .headerBottom h1 {
+            color: blue;
         }
 
         .firstBlock .btnContainer {
@@ -493,6 +564,10 @@
             margin-top: 80px;
         }
 
+        .firstBlock .menu {
+            left: 41.5vw;
+        }
+
         .fourthBlock .boxWrapper div.sticker,
         .fourthBlock .boxWrapper div.mainDish {
             margin-top: 5px;
@@ -575,6 +650,11 @@
     }
 
     @media (max-width: 320px) {
+        .firstBlock .menu {
+            /* left: 41%; */
+            left: 40vw;
+        }
+
         .firstBlock .btnContainer {
             max-width: 310px;
         }

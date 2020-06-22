@@ -215,6 +215,10 @@ header {
     }
 
     nav {
+        div {
+            display: flex;
+        }
+
         a.pad {
             padding-right: 13px;
         }
