@@ -35,10 +35,10 @@
 }
 
 @media (max-width: 1200px) {
-    nav ul .fa:last-child {
+    /* nav ul .fa:last-child {
         margin-right: 0;
         padding-right: 0;
-    }
+    } */
 }
 
 @media (max-width: 992px) {
@@ -52,8 +52,9 @@
         left: 0;
         width: 100%;
         height: 0vh;
-        background-color: rgba(0, 0, 0, 0.658);
+        background-color: rgba(0, 0, 0, 1);
         transition: 0.3s linear;
+        z-index: 5;
     }
 
     .firstBlock .headerTop .menuCover.active {
@@ -72,7 +73,7 @@
         position: fixed;
         top: 38px;
         /* left: 50%; */
-        left: 50vw;
+        left: 49vw;
         /* border: 1px solid red; */
     }
 
@@ -101,11 +102,14 @@
     .menu {
         /* display: none; */
         position: fixed;
+        flex-flow: column wrap;
         top: 15vh;
-        /* left: 43.5%; */
-        /* left: 46.2%; */
-        /* left: 50%; */
-        left: 46vw;
+
+        /* left: 46vw; */
+
+        left: 0;
+        width: 100vw;
+
         z-index: 12;
     }
 
@@ -115,33 +119,45 @@
 
     .menu_list {
         flex-direction: column;
+        align-items: center;
+        width: 100%;
+
     }
 
-    /* .menu_list li:nth-last-child(-n+3) {
-        display: inline-block;
-        color: blue;
+    /* .menu .menu_list li a {
+        font-size: 30px;
+    } */
+
+    .menu_list_2 {
         display: flex;
-        flex-direction: row;
-        align-self: right;
-        justify-self: center;
-        background-color: green;
-        border: 1px solid black;
+        justify-content: space-between;
+        align-self: center;
+        /* position: relative;
+        left: 0px; */
+        /* margin: 10px 0 0; */
+        margin: 0;
+        padding: 0;
+        transform: translateX(-5px);
+        /* padding: 0 20px 0 0; */
+        padding: 0;
+        /* max-width: 120px; */
 
-    } */
+        width: 130px;
+        /* border: 1px solid blue; */
+    }
 
+    .menu .menu_list_2 li {
+        margin-top: 5px;
+    }
 
-    /* .menu_list li:nth-child(-n+3) {
-        flex-direction: row;
-    } */
+    .menu .menu_list_2 li:nth-child(2) {
+        margin: 5px 20px 0;
+    }
 
     .menu_list li:hover .menu .sub-menu_list li {
         display: block;
+        /* transition-delay: 0.3s; */
     }
-
-    /* .menu_list li:nth-last-child(-n+3) {
-        flex-direction: row;
-    } */
-
 
     .menu .sub-menu_list {
         /* display: block; */
@@ -154,17 +170,6 @@
         top: 0;
         left: 100%;
         margin: 0; */
-    }
-
-    .sub-sub-menu_list {
-        position: static;
-        top: 0;
-        left: 0;
-        padding: 0;
-    }
-
-    .sub-sub-menu_list li a {
-        display: block;
     }
 
     /*................ // Menu disapires ......................... */
@@ -228,12 +233,13 @@
         left: 42%;
     } */
 
-    .firstBlock a.fa {
+    /* .firstBlock a.fa {
         transform: translateX(6px);
-    }
+    } */
 
     .firstBlock .headerBottom h1 {
         font-size: 65px;
+        /* color: green; */
     }
 
     footer {
@@ -377,10 +383,9 @@
 }
 
 @media (max-width: 725px) {
-    .firstBlock .menu {
-        /* left: 41%; */
+    /* .firstBlock .menu {
         left: 44.5vw;
-    }
+    } */
 
     .firstBlock .headerBottom h1 {
         color: blue;
@@ -398,7 +403,7 @@
         } */
 
         /* .firstBlock .headerBottom h1 {
-            color: blue;
+            color: green;
         } */
 
         .sixthBlock .textBox .textWrapper_6 p {
@@ -440,9 +445,9 @@
     }
 
     @media (max-width: 550px) {
-        .firstBlock .menu {
+        /* .firstBlock .menu {
             left: 43vw;
-        }
+        } */
 
         /* .firstBlock .headerBottom h1 {
             color: red;
@@ -473,10 +478,9 @@
             /* color: red; */
         }
 
-        .firstBlock .menu {
-            /* left: 41%; */
+        /* .firstBlock .menu {
             left: 41.5vw;
-        }
+        } */
 
         /* .firstBlock .headerBottom h1 {
             color: blue;
@@ -650,10 +654,9 @@
     }
 
     @media (max-width: 320px) {
-        .firstBlock .menu {
-            /* left: 41%; */
+        /* .firstBlock .menu {
             left: 40vw;
-        }
+        } */
 
         .firstBlock .btnContainer {
             max-width: 310px;

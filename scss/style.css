@@ -56,6 +56,15 @@ header .headerTop .wrapper {
       align-content: center;
 }
 
+header .headerTop .wrapper .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 header .headerTop .wrapper .btn {
   display: none;
   height: 40px;
@@ -63,7 +72,9 @@ header .headerTop .wrapper .btn {
   z-index: 10;
   margin: auto 0;
   position: relative;
-  left: 47%;
+  left: 0%;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
   background-color: transparent;
   cursor: pointer;
   overflow: hidden;
@@ -123,12 +134,22 @@ header .headerBottom h1 {
   color: #fff;
 }
 
+header .firstBlock .menu .menu_list_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 27px;
+}
+
+header .menu_list_2 li {
+  margin-top: 27px;
+}
+
 header .menu_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 27px;
-  margin-right: 3%;
 }
 
 header .menu_list a {
@@ -243,6 +264,36 @@ header nav a.fa:hover {
 
 header nav a.fa:focus {
   outline: none;
+}
+
+header .menu_list_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  justify-self: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 120px;
+  margin: 0;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .menu_list_2 li {
+  max-width: 125px;
+}
+
+header .menu_list_2 li a {
+  display: block;
 }
 
 header .btnContainer {
