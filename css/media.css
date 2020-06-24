@@ -99,18 +99,22 @@
 
     /*.................................. Menu disapires ........................................ */
 
-    .menu {
-        /* display: none; */
+    .firstBlock .headerTop .wrapper .menu {
+        display: none;
         position: fixed;
         flex-flow: column wrap;
         top: 15vh;
-
         /* left: 46vw; */
 
         left: 0;
         width: 100vw;
 
         z-index: 12;
+        /* border: 1px solid red; */
+    }
+
+    .firstBlock .headerTop .wrapper .menu.active {
+        display: block;
     }
 
     /* .menu .menu_list li.pad {
@@ -121,28 +125,31 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-
+        /* border: 1px solid green; */
     }
 
     /* .menu .menu_list li a {
         font-size: 30px;
     } */
 
-    .menu_list_2 {
+    .firstBlock .menu_list_2 {
         display: flex;
-        justify-content: space-between;
-        align-self: center;
+        align-content: center;
+        justify-content: center;
+        /* align-self: center; */
         /* position: relative;
         left: 0px; */
         /* margin: 10px 0 0; */
         margin: 0;
         padding: 0;
-        transform: translateX(-5px);
+        /* transform: translateX(-5px); */
+
         /* padding: 0 20px 0 0; */
         padding: 0;
         /* max-width: 120px; */
 
-        width: 130px;
+        /* width: 130px; */
+        min-width: 100%;
         /* border: 1px solid blue; */
     }
 
@@ -387,9 +394,9 @@
         left: 44.5vw;
     } */
 
-    .firstBlock .headerBottom h1 {
+    /* .firstBlock .headerBottom h1 {
         color: blue;
-    }
+    } */
 }
 
 @media (max-width: 705px) {
