@@ -68,10 +68,6 @@
         border-right: 10px solid transparent;
     }
 
-    .menuArrow:hover {
-        border-top-color: greenyellow;
-    }
-
     .firstBlock .headerTop .menuCover.active {
         height: 100vh;
     }
@@ -217,6 +213,14 @@
         display: block;
 
     } */
+
+    .firstBlock .wrapper .menu .sub-menu_list li {
+        display: none;
+    }
+
+    .firstBlock .wrapper .menu .sub-menu_list li.mobiActive {
+        display: block;
+    }
 
     .menu .sub-menu_list {
         /* display: block; */

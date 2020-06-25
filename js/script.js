@@ -72,6 +72,16 @@ $(document).ready(function () {
       "nav, .menu, .menuCover, .firstLine, .secondLine, .thirdLine"
     ).toggleClass("active");
   });
+
+  // $(".firstBlock .menu .sub-menu_list li .menuArrow").click(function () {
+  //   $("#subMenuList").toggleClass("mobiActive");
+  // });
+});
+
+$(document).ready(function () {
+  $(".menu_list li").click(function () {
+    $(".sub-menu_list li").toggleClass('mobiActive');
+  });
 });
 
 /* .............. // Menu Toggle ................. */
