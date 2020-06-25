@@ -166,7 +166,7 @@ header {
 
         ul li a:hover {
             text-decoration: none;
-            transform: scale(1);
+            // transform: scale(1);
             padding: 3px 0 2px 5px;
         }
 
@@ -180,9 +180,9 @@ header {
         }
     }
 
-    .menu_list li:hover>ul {
-        display: block;
-    }
+    // .menu_list li:hover>ul {
+    //     display: block;
+    // }
 
     .menu_list li {
         position: relative;
@@ -193,9 +193,15 @@ header {
         position: absolute;
         width: 190px;
 
-        // li {
-        //     background-color: rgba(218, 165, 32, 0.623);
-        // }
+        li {
+            // background-color: rgba(80, 72, 5, 0.7);
+            background-color: rgba(255, 255, 255, 1);
+
+            &:hover {
+                // background-color: rgba(8, 6, 2, 0.75);
+                background-color: rgba(255, 255, 255, 1);
+            }
+        }
 
         a {
             margin: 0;
@@ -205,38 +211,15 @@ header {
             box-sizing: border-box;
             transition: 0.3s linear;
             // background-color: rgba(151, 137, 16, 0.7);
-            background-color: rgba(80, 72, 5, 0.7);
+            // background-color: rgba(80, 72, 5, 0.7);
 
             &:hover {
                 padding: 5px 0px 5px 10px;
                 // background-color: rgba(29, 22, 5, 0.75);
-                background-color: rgba(8, 6, 2, 0.75);
+                // background-color: rgba(8, 6, 2, 0.75);
             }
         }
     }
-
-    // .sub-sub-menu_list {
-    //     display: none;
-    //     width: 190px;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 100%;
-    //     margin: 0;
-    //     padding: 0 0 0 5px;
-    //     box-sizing: border-box;
-
-    //     li {
-    //         box-sizing: border-box;
-    //     }
-    // }
-
-    // .sub-sub-menu_list li a {
-    //     display: block;
-    //     text-decoration: none;
-    //     margin: 0;
-    //     padding: 0;
-    //     text-decoration: none;
-    // }
 
     nav {
         div {
@@ -285,34 +268,6 @@ header {
             }
         }
     }
-
-    // @media (max-width: 992px) {
-    //     .menu {
-    //         flex-direction: column;
-    //         position: fixed;
-    //         top: 15vh;
-    //         left: 43.5%;
-    //         z-index: 12;
-    //     }
-
-    //     .sub-menu_list {
-    //         position: static;
-    //         top: 0;
-    //         left: 0;
-    //     }
-
-    //     .sub-sub-menu_list {
-    //         position: static;
-    //         top: 0;
-    //         left: 0;
-    //         padding: 0;
-    //     }
-
-    //     .sub-sub-menu_list li a {
-    //         display: block;
-    //     }
-
-    // }
 
     .btnContainer {
         display: flex;
