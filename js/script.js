@@ -73,38 +73,20 @@ $(document).ready(function () {
     ).toggleClass("active");
   });
 
-  // $(".firstBlock .menu .sub-menu_list li .menuArrow").click(function () {
-  //   $("#subMenuList").toggleClass("mobiActive");
-  // });
-});
-
-$(document).ready(function () {
   $(".menu_list li").click(function () {
-    $(".sub-menu_list li").toggleClass('mobiActive');
+    // $(".mobile li").toggleClass('mobi');
+    $(".mobile li").slideToggle(0);
   });
 });
 
+// $(document).ready(function () {
+//   $(".menu_list li").click(function () {
+//     $(".mobile li").toggleClass('mobi');
+//   });
+// });
+
 /* .............. // Menu Toggle ................. */
 
-// var modal = document.getElementById("myModal");
-
-// var btn = document.getElementById("myBtn");
-
-// var span = document.getElementsByClassName("close")[0];
-
-// btn.onclick = function () {
-//   modal.style.display = "block";
-// };
-
-// span.onclick = function () {
-//   modal.style.display = "none";
-// };
-
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
 
 /*  ................................... Calendar .....................................*/
 

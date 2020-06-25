@@ -68,6 +68,10 @@
         border-right: 10px solid transparent;
     }
 
+    .menuArrow.mobi {
+        transform: rotateX(180deg);
+    }
+
     .firstBlock .headerTop .menuCover.active {
         height: 100vh;
     }
@@ -209,16 +213,19 @@
         padding: 10px 0 10px 25px;
     }
 
-    /* .menu_list li:hover .menu .sub-menu_list {
-        display: block;
+    .firstBlock .menu .menu_list li:hover .menu .sub-menu_list {
+        display: none;
+    }
 
-    } */
+    .firstBlock .menu .menu_list li:hover .menu .sub-menu_list li {
+        display: none;
+    }
 
     .firstBlock .wrapper .menu .sub-menu_list li {
         display: none;
     }
 
-    .firstBlock .wrapper .menu .sub-menu_list li.mobiActive {
+    .firstBlock .wrapper .menu .sub-menu_list li.mobi {
         display: block;
     }
 
