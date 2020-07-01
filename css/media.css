@@ -14,6 +14,10 @@
         max-height: 100%;
         padding-bottom: 10vh;
     }
+
+    .menu_list li:hover>ul {
+        display: block;
+    }
 }
 
 @media (max-width: 1200px),
@@ -41,7 +45,39 @@
     } */
 }
 
+
+
+
+
+
+
+@media (min-width: 993px) {
+    /* #subMenuList li {
+        height: 0;
+    } */
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 992px) {
+    /* .sub-menu_list li {
+        display: none;
+    } */
+
+    .menuArrow.arrowToggle {
+        border-top-color: goldenrod;
+        transform: rotate(180deg);
+        transition: rotate 0.3s ease;
+    }
+
     .firstBlock .headerTop {
         justify-content: space-between;
     }
@@ -60,12 +96,14 @@
     .menuArrow {
         position: absolute;
         top: 19px;
-        left: 165px;
+        /* left: 165px; */
+        right: 10px;
         width: 0;
         height: 0;
         border-top: 10px solid #fff;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
+        cursor: pointer;
     }
 
     .menuArrow.mobi {
@@ -76,9 +114,9 @@
         height: 100vh;
     }
 
-    .firstBlock .headerBottom h1 {
+    /* .firstBlock .headerBottom h1 {
         font-size: 70px;
-    }
+    } */
 
     /*................................  Burger menu apires ...................................... */
 
@@ -98,6 +136,7 @@
 
     #burger .firstLine.active {
         transform: rotate(45deg) translate(13px, 10px);
+        border-radius: 5%;
     }
 
     #burger .secondLine.active {
@@ -106,6 +145,7 @@
 
     #burger .thirdLine.active {
         transform: rotate(-45deg) translate(9px, -5px);
+        border-radius: 5%;
     }
 
     /*............................. //  Burger menu apires ...................................... */
@@ -147,6 +187,17 @@
         padding: 0;
     }
 
+    /* .firstBlock .headerTop .wrapper>.menuli:hover {
+        background-color: rgba(170, 148, 24, 0.644);
+    } */
+
+    /* .firstBlock .headerTop .wrapper .menu li:hover .sub-menu_list li a {
+       
+        background-color: rgba(24, 24, 20, 0.911);
+        color: #fff;
+
+    } */
+
     .menu_list {
         flex-direction: column;
         align-items: center;
@@ -162,6 +213,7 @@
 
     .menu .menu_list li a {
         padding: 5px 0px;
+        text-decoration: none;
     }
 
     /* .menu .menu_list li:last-child {
@@ -213,20 +265,19 @@
         padding: 10px 0 10px 25px;
     }
 
-    .firstBlock .menu .menu_list li:hover .menu .sub-menu_list {
-        display: none;
-    }
-
-    .firstBlock .menu .menu_list li:hover .menu .sub-menu_list li {
-        display: none;
-    }
-
     .firstBlock .wrapper .menu .sub-menu_list li {
         display: none;
     }
 
-    .firstBlock .wrapper .menu .sub-menu_list li.mobi {
-        display: block;
+    .menu_list .clicker_1 .arrow_1,
+    .menu_list .clicker_2 .arrow_2 {
+        transition: 0.5s ease;
+    }
+
+    .menu_list .clicker_1 .arrow_1.arrRotate,
+    .menu_list .clicker_2 .arrow_2.arrRotate {
+        transform: rotate(90deg);
+        /* transition: 5s ease; */
     }
 
     .menu .sub-menu_list {
@@ -263,10 +314,10 @@
         padding: 10px 10px 0 13px;
     } */
 
-    .headerBottom h1 {
+    /* .headerBottom h1 {
         margin-top: 23vh;
         margin-bottom: 10vh;
-    }
+    } */
 
     .sixthBlock .imgContainer div {
         padding: 2.5px;
@@ -316,10 +367,10 @@
         transform: translateX(6px);
     } */
 
-    .firstBlock .headerBottom h1 {
+    /* .firstBlock .headerBottom h1 {
         font-size: 65px;
-        /* color: green; */
-    }
+        
+    } */
 
     footer {
         padding: 10px 0 0 0;
@@ -347,7 +398,7 @@
     } */
 
     .firstBlock .headerBottom h1 {
-        font-size: 60px;
+        font-size: calc(38px + (42 + 42 * 0.7) * ((100vw - 411px) / 1600));
     }
 
     .secondBlock .leftSide h2 {
@@ -500,9 +551,9 @@
     }
 
     @media (max-width: 655px) {
-        .firstBlock .headerBottom h1 {
+        /* .firstBlock .headerBottom h1 {
             font-size: 57px;
-        }
+        } */
     }
 
     @media (max-width: 650px) {
@@ -511,289 +562,289 @@
         }
     }
 
-    @media (max-width: 624px) {
+    /* @media (max-width: 624px) {
         .firstBlock .headerBottom h1 {
-            /* color: greenyellow; */
+          
             font-size: 55px;
             margin-bottom: 10vh;
-        }
+        } */
 
-        .secondBlock .leftSide img {
-            flex: 0 2 auto;
-        }
+    .secondBlock .leftSide img {
+        flex: 0 2 auto;
     }
+}
 
-    @media (max-width: 550px) {
-        /* .firstBlock .menu {
+@media (max-width: 550px) {
+    /* .firstBlock .menu {
             left: 43vw;
         } */
 
-        /* .firstBlock .headerBottom h1 {
+    /* .firstBlock .headerBottom h1 {
             color: red;
         } */
-    }
+}
 
-    @media (max-width: 547px) {
-        .fourthBlock .boxWrapper div .boxSpecial {
-            max-height: 23%;
-        }
+@media (max-width: 547px) {
+    .fourthBlock .boxWrapper div .boxSpecial {
+        max-height: 23%;
     }
+}
 
-    @media (max-width: 521px) {
-        .firstBlock .headerBottom h1 {
+@media (max-width: 521px) {
+    /* .firstBlock .headerBottom h1 {
             margin-top: 19vh;
             margin-bottom: 0;
-        }
+        } */
 
-        .fifthBlock {
-            padding-top: 15px;
-            padding-bottom: 0px;
-        }
+    .fifthBlock {
+        padding-top: 15px;
+        padding-bottom: 0px;
     }
+}
 
-    @media (max-width: 414px) {
-        .firstBlock .headerBottom h1 {
+@media (max-width: 414px) {
+    /* .firstBlock .headerBottom h1 {
             font-size: 47px;
-            /* color: red; */
-        }
+           
+        } */
 
-        /* .firstBlock .menu {
+    /* .firstBlock .menu {
             left: 41.5vw;
         } */
 
-        /* .firstBlock .headerBottom h1 {
+    /* .firstBlock .headerBottom h1 {
             color: blue;
         } */
 
-        .firstBlock .btnContainer {
-            margin-top: 15vh;
-        }
-
-        .fourthBlock .boxWrapper div h1 {
-            /* color: red; */
-            font-size: 22px;
-        }
-
-        .fourthBlock .boxWrapper div p>span {
-            /* color: rgb(83, 56, 107); */
-            font-size: 15px;
-        }
-
-        .fourthBlock .boxWrapper div .boxSpecial .inner {
-            font-size: 16px;
-            /* color: red; */
-        }
-
-        .fourthBlock .boxWrapper div p .special {
-            flex-shrink: 8;
-        }
-
-        .fourthBlock .boxWrapper div p .special span {
-            transform: rotate(90deg);
-        }
-
-        .fourthBlock .boxWrapper div .boxSpecial {
-            max-height: 15.6%;
-        }
-
-        .fifthBlock {
-            display: flex;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        .sixthBlock .textBox .textWrapper_6 h1 {
-            font-size: 20px;
-        }
-
-        .sixthBlock .textBox .textWrapper_6 p {
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: normal;
-            padding: 0 5px;
-            margin: 0 auto;
-            width: 100%;
-        }
-
-        .sixthBlock .imgContainer div {
-            padding: 2.5px;
-            margin: 0;
-        }
+    .firstBlock .btnContainer {
+        margin-top: 15vh;
     }
 
-    @media (max-width: 411px) {
-        .firstBlock .headerBottom h1 {
+    .fourthBlock .boxWrapper div h1 {
+        /* color: red; */
+        font-size: 22px;
+    }
+
+    .fourthBlock .boxWrapper div p>span {
+        /* color: rgb(83, 56, 107); */
+        font-size: 15px;
+    }
+
+    .fourthBlock .boxWrapper div .boxSpecial .inner {
+        font-size: 16px;
+        /* color: red; */
+    }
+
+    .fourthBlock .boxWrapper div p .special {
+        flex-shrink: 8;
+    }
+
+    .fourthBlock .boxWrapper div p .special span {
+        transform: rotate(90deg);
+    }
+
+    .fourthBlock .boxWrapper div .boxSpecial {
+        max-height: 15.6%;
+    }
+
+    .fifthBlock {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sixthBlock .textBox .textWrapper_6 h1 {
+        font-size: 20px;
+    }
+
+    .sixthBlock .textBox .textWrapper_6 p {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: normal;
+        padding: 0 5px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .sixthBlock .imgContainer div {
+        padding: 2.5px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 411px) {
+    /* .firstBlock .headerBottom h1 {
             font-size: 47px;
-            /* color: greenyellow; */
-        }
+           
+        } */
 
-        .firstBlock .btnContainer {
-            margin-top: 130px;
-        }
-
-        .fourthBlock .boxWrapper div .boxSpecial .special {
-            flex-shrink: 9;
-            margin-right: 1.1px;
-        }
-
-        .fourthBlock .boxWrapper div .boxSpecial .special span {
-            font-size: 14px;
-        }
+    .firstBlock .btnContainer {
+        margin-top: 130px;
     }
 
-    @media (max-width: 375px) {
-        .firstBlock .btnContainer {
-            margin-top: 80px;
-        }
+    .fourthBlock .boxWrapper div .boxSpecial .special {
+        flex-shrink: 9;
+        margin-right: 1.1px;
+    }
 
-        /* .firstBlock .menu {
+    .fourthBlock .boxWrapper div .boxSpecial .special span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .firstBlock .btnContainer {
+        margin-top: 80px;
+    }
+
+    /* .firstBlock .menu {
             left: 41.5vw;
         } */
 
-        .fourthBlock .boxWrapper div.sticker,
-        .fourthBlock .boxWrapper div.mainDish {
-            margin-top: 5px;
-        }
-
-        .fourthBlock .boxWrapper div p {
-            font-size: 14.6px;
-        }
-
-        .fourthBlock .boxWrapper div .boxSpecial {
-            max-height: 15.41%;
-        }
-
-        .fourthBlock .boxWrapper div p>span {
-            font-size: 14px;
-            font-weight: bold;
-            /* color: blueviolet; */
-        }
-
-        .fourthBlock .boxWrapper div.sticker .inner {
-            font-weight: normal;
-            font-size: 14.6px;
-            /* color: red; */
-        }
-
-        .fourthBlock .boxWrapper div .boxSpecial .special {
-            flex-shrink: 9;
-        }
-
-        .fourthBlock .boxWrapper div .boxSpecial .special span {
-            font-size: 12px;
-            font-weight: normal;
-        }
-
-        .fifthBlock {
-            display: flex;
-            align-items: center;
-            padding-top: 0;
-            padding-bottom: 0px;
-        }
-
-        .fifthBlock .square p {
-            font-size: 18px;
-        }
-
-        .sixthBlock .textBox .textWrapper_6 img {
-            width: 100%;
-        }
-
-        .sixthBlock .textBox .textWrapper_6 h1 {
-            font-size: 20px;
-        }
-
-        .sixthBlock .textBox .textWrapper_6 p {
-            font-size: 14px;
-            line-height: 1.5;
-            letter-spacing: normal;
-            padding: 0 5px;
-            margin: 0;
-        }
+    .fourthBlock .boxWrapper div.sticker,
+    .fourthBlock .boxWrapper div.mainDish {
+        margin-top: 5px;
     }
 
-    @media (max-width: 360px) {
-        .firstBlock .btnContainer {
-            margin-top: 50px;
-        }
-
-        .fourthBlock .boxWrapper div .boxSpecial {
-            max-height: 15.5%;
-        }
-
-        .fourthBlock .boxWrapper div p>span {
-            /* color: red; */
-            font-size: 13px;
-        }
-
-        .fourthBlock .boxWrapper div .boxSpecial .inner {
-            font-size: 14px;
-        }
+    .fourthBlock .boxWrapper div p {
+        font-size: 14.6px;
     }
 
-    @media (max-width: 320px) {
-        /* .firstBlock .menu {
+    .fourthBlock .boxWrapper div .boxSpecial {
+        max-height: 15.41%;
+    }
+
+    .fourthBlock .boxWrapper div p>span {
+        font-size: 14px;
+        font-weight: bold;
+        /* color: blueviolet; */
+    }
+
+    .fourthBlock .boxWrapper div.sticker .inner {
+        font-weight: normal;
+        font-size: 14.6px;
+        /* color: red; */
+    }
+
+    .fourthBlock .boxWrapper div .boxSpecial .special {
+        flex-shrink: 9;
+    }
+
+    .fourthBlock .boxWrapper div .boxSpecial .special span {
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .fifthBlock {
+        display: flex;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0px;
+    }
+
+    .fifthBlock .square p {
+        font-size: 18px;
+    }
+
+    .sixthBlock .textBox .textWrapper_6 img {
+        width: 100%;
+    }
+
+    .sixthBlock .textBox .textWrapper_6 h1 {
+        font-size: 20px;
+    }
+
+    .sixthBlock .textBox .textWrapper_6 p {
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: normal;
+        padding: 0 5px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .firstBlock .btnContainer {
+        margin-top: 50px;
+    }
+
+    .fourthBlock .boxWrapper div .boxSpecial {
+        max-height: 15.5%;
+    }
+
+    .fourthBlock .boxWrapper div p>span {
+        /* color: red; */
+        font-size: 13px;
+    }
+
+    .fourthBlock .boxWrapper div .boxSpecial .inner {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    /* .firstBlock .menu {
             left: 40vw;
         } */
 
-        .firstBlock .btnContainer {
-            max-width: 310px;
-        }
-
-        .firstBlock .btnContainer .btnWrapper1 {
-            margin-right: 5px;
-        }
-
-        .firstBlock .btnContainer .btnWrapper2 {
-            margin-left: 5px;
-        }
-
-        .thirdBlock .square {
-            top: 12%;
-        }
-
-        .fourthBlock .boxWrapper div .boxSpecial {
-            max-height: 15%;
-        }
-
-        .fourthBlock .boxWrapper div p {
-            font-size: 12.5px;
-
-        }
-
-        .fourthBlock .boxWrapper div p>span {
-            /* color: red; */
-            font-size: 12px;
-        }
-
-        .fourthBlock .boxWrapper div .boxSpecial .inner {
-            font-size: 12.5px;
-        }
-
-        .fourthBlock .boxWrapper div .boxSpecial .special {
-            flex-shrink: 10;
-            margin-right: 2px;
-        }
-
-        .fourthBlock .boxWrapper div .boxSpecial .special span {
-            font-size: 10.7px;
-        }
-
-        .fifthBlock {
-            padding: 0;
-        }
-
-        .fifthBlock .square h1 {
-            font-size: 25px;
-            padding: 0;
-            margin: 0;
-        }
-
-        .fifthBlock .square p {
-            font-size: 16.9px;
-            padding: 0;
-            margin: 0;
-        }
+    .firstBlock .btnContainer {
+        max-width: 310px;
     }
+
+    .firstBlock .btnContainer .btnWrapper1 {
+        margin-right: 5px;
+    }
+
+    .firstBlock .btnContainer .btnWrapper2 {
+        margin-left: 5px;
+    }
+
+    .thirdBlock .square {
+        top: 12%;
+    }
+
+    .fourthBlock .boxWrapper div .boxSpecial {
+        max-height: 15%;
+    }
+
+    .fourthBlock .boxWrapper div p {
+        font-size: 12.5px;
+
+    }
+
+    .fourthBlock .boxWrapper div p>span {
+        /* color: red; */
+        font-size: 12px;
+    }
+
+    .fourthBlock .boxWrapper div .boxSpecial .inner {
+        font-size: 12.5px;
+    }
+
+    .fourthBlock .boxWrapper div .boxSpecial .special {
+        flex-shrink: 10;
+        margin-right: 2px;
+    }
+
+    .fourthBlock .boxWrapper div .boxSpecial .special span {
+        font-size: 10.7px;
+    }
+
+    .fifthBlock {
+        padding: 0;
+    }
+
+    .fifthBlock .square h1 {
+        font-size: 25px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .fifthBlock .square p {
+        font-size: 16.9px;
+        padding: 0;
+        margin: 0;
+    }
+}
 }

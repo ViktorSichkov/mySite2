@@ -72,18 +72,57 @@ $(document).ready(function () {
       "nav, .menu, .menuCover, .firstLine, .secondLine, .thirdLine"
     ).toggleClass("active");
   });
-
-  $(".menu_list li").click(function () {
-    // $(".mobile li").toggleClass('mobi');
-    $(".mobile li").slideToggle(0);
-  });
 });
 
-// $(document).ready(function () {
-//   $(".menu_list li").click(function () {
-//     $(".mobile li").toggleClass('mobi');
-//   });
-// });
+$(document).ready(function () {
+  var $width = $(window).width();
+  var $clicker_1 = $("clicker_1");
+  var $clicker_2 = $("clicker_2");
+  var $subMenuList = $("sub-menu_list");
+  var $arrow = $(".menuArrow");
+
+  $(".clicker_1, .clicker_2").on({
+    click: function () {
+      $(".mobile li").slideToggle("slow");
+    }
+  });
+
+  $(".clicker_1").on({
+    click: function (event) {
+      $(".arrow_1").css("border-top-color", "#fff").toggleClass("arrRotate");
+    },
+    mouseenter: function () {
+      $("span.arrow_1").css({
+        'border-top-color': 'gold'
+      });
+
+    },
+    mouseleave: function () {
+      $(".arrow_1").css({
+        'border-top-color': '#fff'
+      });
+    }
+  });
+
+  $(".clicker_2").on({
+    click: function (event) {
+      $(".arrow_2").toggleClass("arrRotate").css("border-top-color", "#fff");
+
+    },
+    mouseenter: function () {
+      $(".arrow_2").css({
+        'border-top-color': 'gold'
+      });
+    },
+    mouseleave: function () {
+      $(".arrow_2").css({
+        'border-top-color': '#fff'
+      });
+    }
+  });
+
+});
+
 
 /* .............. // Menu Toggle ................. */
 
